@@ -1,0 +1,42 @@
+  <div class="row">
+              @for(item of immigrationServices; track $index; let i = $index) {
+                 @if (popular) {
+                     @if (item.popular){
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-3 mb-2 mb-sm-4">
+                            <a (click)="viewPage(i)"  class="card hover-lift cursor-pointer" data-aos="fade-up"  [attr.data-aos-delay]="item.delay"
+                            style="text-decoration: none; color: inherit;">
+                            <div class="card-icon" [style.background]="item.bgColor">
+                                <i [class]="item.icon"></i>
+                            </div>
+                            <h3 class="card-title">{{ item.title }}</h3>
+                            <p class="card-text">{{ item.description }}</p>
+                            <span 
+                                class="cursor-pointer"
+                                style="color: var(--primary-color); font-weight: 600; margin-top: auto; display: inline-block;">
+                                Read More <i class="fas fa-arrow-right" style="font-size: 14px;"></i>
+                            </span>
+                        </a>
+                        </div>
+                     }
+                   
+                 }
+                  @if (!popular) {
+                          <div class="col-12 col-sm-12 col-md-4 col-lg-3 mb-2 mb-sm-4">
+                            <a  (click)="viewPage(i)" class="card hover-lift cursor-pointer" data-aos="fade-up"  [attr.data-aos-delay]="item.delay"
+                            style="text-decoration: none; color: inherit;">
+                            <div class="card-icon" [style.background]="item.bgColor">
+                                <i [class]="item.icon"></i>
+                            </div>
+                            <h3 class="card-title">{{ item.title }}</h3>
+                            <p class="card-text">{{ item.description }}</p>
+                            <span
+                                class="cursor-pointer"
+                                style="color: var(--primary-color); font-weight: 600; margin-top: auto; display: inline-block;">
+                                Read More <i class="fas fa-arrow-right" style="font-size: 14px;"></i>
+                            </span>
+                        </a>
+                    </div>
+                 }
+          
+        }
+</div>

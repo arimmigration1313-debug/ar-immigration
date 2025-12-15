@@ -1,0 +1,2160 @@
+// export const immigrationServices =
+//  [
+//   {
+//     title: "Study Visa",
+//     delay: 0,
+//     bgColor: "linear-gradient(135deg, #3B82F6, #2563EB)",
+//     icon: "fas fa-graduation-cap",
+//     description:
+//       "Student visa assistance for top universities worldwide. F-1, Tier 4, and other student permits.",
+//     link: "service-detail.html",
+//     popular: true,
+//     view:{
+//       slider:{name:'Study Visa Services',heading:'Study Visa Assistance',paragraph:'Get accepted to your dream university and secure your student visa'},
+//       about:{
+//         title:'Overview',
+//         p1:'Our Study Visa service provides comprehensive support for students aspiring to pursue higher education abroad. We assist with university selection, application processing, visa documentation, and pre-departure guidance.',
+//         p2:'With partnerships with over 100 universities globally, we help you find the perfect program that matches your academic profile and career aspirations. Our expert team ensures your student visa application is complete, accurate, and submitted on time.',
+//         image:'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=500&fit=crop',
+//         storiess:[
+//           {
+//             icon:'fas fa-check-circle',
+//             heading:'Success Rate: 98%'
+//           },
+//           {
+//             icon:'fas fa-clock',
+//             heading:'Processing Time: 4-6 weeks'
+//           }
+//         ]
+//       },
+//       requirements:[
+//         {
+//         heading:'Academic Requirements',
+//         delay: 0,
+//         paragraph:[
+//           "Completion of previous education (Bachelor's/Master's)",
+//           "Minimum GPA/percentage as per university requirements",
+//           "English proficiency test scores (IELTS/TOEFL/PTE)",
+//           "Letter of acceptance from recognized institution"
+//         ]
+//         },
+//         {
+//         heading:'Financial Requirements',
+//         delay: 100,
+//         paragraph:[
+//           "Proof of funds for tuition and living expenses",
+//           "Bank statements (last 6 months)",
+//           "Sponsor documents or scholarship letters",
+//           "Tax returns and income proof of sponsors"
+//         ]
+//         }
+        
+//       ],
+//       process:[
+//         {
+//           number:'1',
+//           bgColor: "linear-gradient(135deg, #3B82F6, #2563EB)",
+//           delay: 0,
+//           heading:'Counseling & University Selection',
+//           p:'Profile evaluation and shortlisting universities'
+//         },
+//         {
+//           number:'2',
+//           delay: 100,
+//           bgColor: "linear-gradient(135deg, #10B981, #059669)",
+//           heading:'Application Preparation',
+//           p:'SOP, LORs, and complete application documents'
+//         },
+//         {
+//           number:'3',
+//           delay: 200,
+//           heading:'Admission Processing',
+//           bgColor: "linear-gradient(135deg, #F59E0B, #D97706)",
+//           p:'Submit applications and follow up with universities'
+//         },
+//         {
+//           number:'4',
+//           delay: 0,
+//           bgColor: "linear-gradient(135deg, var(--primary-color), var(--primary-dark))",
+//           heading:'Visa Documentation',
+//           p:'Prepare complete visa application package'
+//         },
+//         {
+//           number:'5',
+//           delay: 100,
+//           bgColor: "linear-gradient(135deg, #14B8A6, #0D9488)",
+//           heading:'Visa Interview Prep',
+//           p:'Mock interviews and expert guidance'
+//         },
+//         {
+//           number:'6',
+//           delay: 200,
+//           bgColor: "linear-gradient(135deg, var(--secondary-color), var(--secondary-dark))",
+//           heading:'Pre-Departure Support',
+//           p:'Travel, accommodation, and orientation'
+//         }
+
+//       ],
+//       documents:[
+//         {
+//           name:'Academic Documents',
+//           aos: "fade-right",
+//           colorVar: "var(--primary-color)",
+//           icon:'fas fa-file-alt',
+//           list:[
+//             'Academic transcripts',
+//             'Degree certificates',
+//             'English proficiency scores',
+//             'Standardized test scores (GRE/GMAT)',
+//             'Statement of Purpose'
+//           ]
+//         },
+//         {
+//           name:'Personal & Financial',
+//           aos: "fade-left",
+//           colorVar: "var(--secondary-color)",
+//           icon:'fas fa-passport',
+//           list:[
+//             'Valid passport',
+//             'Passport-size photographs',
+//             'Bank statements',
+//             'Sponsor documents',
+//             'Acceptance letter from university'
+//           ]
+//         }
+//       ],
+//       questions:[
+//         {
+//           heading:'How long does the student visa process take?',
+//           open: false,
+//           p:'The processing time varies by country but typically ranges from 4-8 weeks. We recommend starting your application 3-6 months before your intended start date.'
+//         },
+//         {
+//           heading:'What is the minimum IELTS score required?',
+//           open: false,
+//           p:'Most universities require an overall band score of 6.0-7.0 for undergraduate programs and 6.5-7.5 for postgraduate programs. Requirements vary by institution.'
+//         },
+//         {
+//           heading:'Can I work while studying on a student visa?',
+//           open: false,
+//           p:'Yes, most countries allow international students to work part-time (usually 20 hours per week) during studies and full-time during breaks.'
+//         },
+//         {
+//           heading:'What are the costs involved?',
+//           open: false,
+//           p:'Costs vary by destination but include tuition fees, living expenses, visa application fees, and our service fees. We provide a detailed cost breakdown during consultation.'
+//         }
+
+//       ]
+//     }
+//   },
+//   {
+//     title: "Work Visa",
+//     delay: 100,
+//     icon: "fas fa-briefcase",
+//     bgColor: "linear-gradient(135deg, #10B981, #059669)",
+//     description:
+//       "Employment-based visas including H-1B, Tier 2, and skilled worker programs globally.",
+//     link: "service-detail.html",
+//     popular: false,
+//      view:{
+//       slider:{name:'Work Visa Services',heading:'Work Visa Assistance',paragraph:'Get accepted to your dream university and secure your student visa'},
+//       about:{
+//         title:'Overview',
+//         p1:'Our Work Visa service provides comprehensive support for students aspiring to pursue higher education abroad. We assist with university selection, application processing, visa documentation, and pre-departure guidance.',
+//         p2:'With partnerships with over 100 universities globally, we help you find the perfect program that matches your academic profile and career aspirations. Our expert team ensures your student visa application is complete, accurate, and submitted on time.',
+//         image:'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=500&fit=crop',
+//         storiess:[
+//           {
+//             icon:'fas fa-check-circle',
+//             heading:'Success Rate: 98%'
+//           },
+//           {
+//             icon:'fas fa-clock',
+//             heading:'Processing Time: 4-6 weeks'
+//           }
+//         ]
+//       },
+//         requirements:[
+//           {
+//           heading:'Academic Requirements',
+//           delay: 0,
+//           paragraph:[
+//             "Completion of previous education (Bachelor's/Master's)",
+//             "Minimum GPA/percentage as per university requirements",
+//             "English proficiency test scores (IELTS/TOEFL/PTE)",
+//             "Letter of acceptance from recognized institution"
+//           ]
+//           },
+//           {
+//           heading:'Financial Requirements',
+//           delay: 100,
+//           paragraph:[
+//             "Proof of funds for tuition and living expenses",
+//             "Bank statements (last 6 months)",
+//             "Sponsor documents or scholarship letters",
+//             "Tax returns and income proof of sponsors"
+//           ]
+//           }
+         
+//         ],
+//         process:[
+//           {
+//             number:'1',
+//             bgColor: "linear-gradient(135deg, #3B82F6, #2563EB)",
+//             delay: 0,
+//             heading:'Counseling & University Selection',
+//             p:'Profile evaluation and shortlisting universities'
+//           },
+//           {
+//             number:'2',
+//             delay: 100,
+//             bgColor: "linear-gradient(135deg, #10B981, #059669)",
+//             heading:'Application Preparation',
+//             p:'SOP, LORs, and complete application documents'
+//           },
+//           {
+//             number:'3',
+//             delay: 200,
+//             heading:'Admission Processing',
+//             bgColor: "linear-gradient(135deg, #F59E0B, #D97706)",
+//             p:'Submit applications and follow up with universities'
+//           },
+//           {
+//             number:'4',
+//             delay: 0,
+//             bgColor: "linear-gradient(135deg, var(--primary-color), var(--primary-dark))",
+//             heading:'Visa Documentation',
+//             p:'Prepare complete visa application package'
+//           },
+//           {
+//             number:'5',
+//             delay: 100,
+//             bgColor: "linear-gradient(135deg, #14B8A6, #0D9488)",
+//             heading:'Visa Interview Prep',
+//             p:'Mock interviews and expert guidance'
+//           },
+//           {
+//             number:'6',
+//             delay: 200,
+//             bgColor: "linear-gradient(135deg, var(--secondary-color), var(--secondary-dark))",
+//             heading:'Pre-Departure Support',
+//             p:'Travel, accommodation, and orientation'
+//           }
+
+//         ],
+//           documents:[
+//         {
+//           name:'Academic Documents',
+//           aos: "fade-right",
+//           colorVar: "var(--primary-color)",
+//           icon:'fas fa-file-alt',
+//           list:[
+//             'Academic transcripts',
+//             'Degree certificates',
+//             'English proficiency scores',
+//             'Standardized test scores (GRE/GMAT)',
+//             'Statement of Purpose'
+//           ]
+//         },
+//         {
+//           name:'Personal & Financial',
+//           aos: "fade-left",
+//           colorVar: "var(--secondary-color)",
+//           icon:'fas fa-passport',
+//           list:[
+//             'Valid passport',
+//             'Passport-size photographs',
+//             'Bank statements',
+//             'Sponsor documents',
+//             'Acceptance letter from university'
+//           ]
+//         }
+//       ],
+//        questions:[
+//         {
+//           heading:'How long does the student visa process take?',
+//           open: false,
+//           p:'The processing time varies by country but typically ranges from 4-8 weeks. We recommend starting your application 3-6 months before your intended start date.'
+//         },
+//         {
+//           heading:'What is the minimum IELTS score required?',
+//           open: false,
+//           p:'Most universities require an overall band score of 6.0-7.0 for undergraduate programs and 6.5-7.5 for postgraduate programs. Requirements vary by institution.'
+//         },
+//         {
+//           heading:'Can I work while studying on a student visa?',
+//           open: false,
+//           p:'Yes, most countries allow international students to work part-time (usually 20 hours per week) during studies and full-time during breaks.'
+//         },
+//         {
+//           heading:'What are the costs involved?',
+//           open: false,
+//           p:'Costs vary by destination but include tuition fees, living expenses, visa application fees, and our service fees. We provide a detailed cost breakdown during consultation.'
+//         }
+
+//       ]
+//     }
+//   },
+//   {
+//     title: "Visitor Visa",
+//     delay: 200,
+//     icon: "fas fa-plane",
+//     bgColor: "linear-gradient(135deg, #F59E0B, #D97706)",
+//     description:
+//       "Tourist and visitor visas for leisure, business trips, and family visits worldwide.",
+//     link: "service-detail.html",
+//     popular: false,
+//       view:{
+//       slider:{name:'Visitor Visa Services',heading:'Visitor Visa Assistance',paragraph:'Get accepted to your dream university and secure your student visa'},
+//       about:{
+//         title:'Overview',
+//         p1:'Our Visitor Visa service provides comprehensive support for students aspiring to pursue higher education abroad. We assist with university selection, application processing, visa documentation, and pre-departure guidance.',
+//         p2:'With partnerships with over 100 universities globally, we help you find the perfect program that matches your academic profile and career aspirations. Our expert team ensures your student visa application is complete, accurate, and submitted on time.',
+//         image:'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=500&fit=crop',
+//         storiess:[
+//           {
+//             icon:'fas fa-check-circle',
+//             heading:'Success Rate: 98%'
+//           },
+//           {
+//             icon:'fas fa-clock',
+//             heading:'Processing Time: 4-6 weeks'
+//           }
+//         ]
+//       },
+//         requirements:[
+//           {
+//           heading:'Academic Requirements',
+//           delay: 0,
+//           paragraph:[
+//             "Completion of previous education (Bachelor's/Master's)",
+//             "Minimum GPA/percentage as per university requirements",
+//             "English proficiency test scores (IELTS/TOEFL/PTE)",
+//             "Letter of acceptance from recognized institution"
+//           ]
+//           },
+//           {
+//           heading:'Financial Requirements',
+//           delay: 100,
+//           paragraph:[
+//             "Proof of funds for tuition and living expenses",
+//             "Bank statements (last 6 months)",
+//             "Sponsor documents or scholarship letters",
+//             "Tax returns and income proof of sponsors"
+//           ]
+//           }
+         
+//         ],
+//           process:[
+//           {
+//             number:'1',
+//             bgColor: "linear-gradient(135deg, #3B82F6, #2563EB)",
+//             delay: 0,
+//             heading:'Counseling & University Selection',
+//             p:'Profile evaluation and shortlisting universities'
+//           },
+//           {
+//             number:'2',
+//             delay: 100,
+//             bgColor: "linear-gradient(135deg, #10B981, #059669)",
+//             heading:'Application Preparation',
+//             p:'SOP, LORs, and complete application documents'
+//           },
+//           {
+//             number:'3',
+//             delay: 200,
+//             heading:'Admission Processing',
+//             bgColor: "linear-gradient(135deg, #F59E0B, #D97706)",
+//             p:'Submit applications and follow up with universities'
+//           },
+//           {
+//             number:'4',
+//             delay: 0,
+//             bgColor: "linear-gradient(135deg, var(--primary-color), var(--primary-dark))",
+//             heading:'Visa Documentation',
+//             p:'Prepare complete visa application package'
+//           },
+//           {
+//             number:'5',
+//             delay: 100,
+//             bgColor: "linear-gradient(135deg, #14B8A6, #0D9488)",
+//             heading:'Visa Interview Prep',
+//             p:'Mock interviews and expert guidance'
+//           },
+//           {
+//             number:'6',
+//             delay: 200,
+//             bgColor: "linear-gradient(135deg, var(--secondary-color), var(--secondary-dark))",
+//             heading:'Pre-Departure Support',
+//             p:'Travel, accommodation, and orientation'
+//           }
+
+//         ],
+//          documents:[
+//         {
+//           name:'Academic Documents',
+//           aos: "fade-right",
+//           colorVar: "var(--primary-color)",
+//           icon:'fas fa-file-alt',
+//           list:[
+//             'Academic transcripts',
+//             'Degree certificates',
+//             'English proficiency scores',
+//             'Standardized test scores (GRE/GMAT)',
+//             'Statement of Purpose'
+//           ]
+//         },
+//         {
+//           name:'Personal & Financial',
+//           aos: "fade-left",
+//           colorVar: "var(--secondary-color)",
+//           icon:'fas fa-passport',
+//           list:[
+//             'Valid passport',
+//             'Passport-size photographs',
+//             'Bank statements',
+//             'Sponsor documents',
+//             'Acceptance letter from university'
+//           ]
+//         }
+//       ],
+//       questions:[
+//         {
+//           heading:'How long does the student visa process take?',
+//           open: false,
+//           p:'The processing time varies by country but typically ranges from 4-8 weeks. We recommend starting your application 3-6 months before your intended start date.'
+//         },
+//         {
+//           heading:'What is the minimum IELTS score required?',
+//           open: false,
+//           p:'Most universities require an overall band score of 6.0-7.0 for undergraduate programs and 6.5-7.5 for postgraduate programs. Requirements vary by institution.'
+//         },
+//         {
+//           heading:'Can I work while studying on a student visa?',
+//           open: false,
+//           p:'Yes, most countries allow international students to work part-time (usually 20 hours per week) during studies and full-time during breaks.'
+//         },
+//         {
+//           heading:'What are the costs involved?',
+//           open: false,
+//           p:'Costs vary by destination but include tuition fees, living expenses, visa application fees, and our service fees. We provide a detailed cost breakdown during consultation.'
+//         }
+
+//       ]
+//     }
+//   },
+//   {
+//     title: "Skilled Immigration",
+//     delay: 300,
+//     icon: "fas fa-award",
+//     bgColor: "linear-gradient(135deg, var(--primary-color), var(--primary-dark))",
+//     description:
+//       "Points-based immigration programs like Express Entry Canada, SkillSelect Australia.",
+//     link: "service-detail.html",
+//     popular: true,
+//        view:{
+//       slider:{name:'Skilled Immigration Services',heading:'Skilled Immigration Assistance',paragraph:'Get accepted to your dream university and secure your student visa'},
+//       about:{
+//         title:'Overview',
+//         p1:'Our Skilled Immigration service provides comprehensive support for students aspiring to pursue higher education abroad. We assist with university selection, application processing, visa documentation, and pre-departure guidance.',
+//         p2:'With partnerships with over 100 universities globally, we help you find the perfect program that matches your academic profile and career aspirations. Our expert team ensures your student visa application is complete, accurate, and submitted on time.',
+//         image:'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=500&fit=crop',
+//         storiess:[
+//           {
+//             icon:'fas fa-check-circle',
+//             heading:'Success Rate: 98%'
+//           },
+//           {
+//             icon:'fas fa-clock',
+//             heading:'Processing Time: 4-6 weeks'
+//           }
+//         ]
+//       },
+//         requirements:[
+//           {
+//           heading:'Academic Requirements',
+//           delay: 0,
+//           paragraph:[
+//             "Completion of previous education (Bachelor's/Master's)",
+//             "Minimum GPA/percentage as per university requirements",
+//             "English proficiency test scores (IELTS/TOEFL/PTE)",
+//             "Letter of acceptance from recognized institution"
+//           ]
+//           },
+//           {
+//           heading:'Financial Requirements',
+//           delay: 100,
+//           paragraph:[
+//             "Proof of funds for tuition and living expenses",
+//             "Bank statements (last 6 months)",
+//             "Sponsor documents or scholarship letters",
+//             "Tax returns and income proof of sponsors"
+//           ]
+//           }
+         
+//         ],
+//          process:[
+//           {
+//             number:'1',
+//             bgColor: "linear-gradient(135deg, #3B82F6, #2563EB)",
+//             delay: 0,
+//             heading:'Counseling & University Selection',
+//             p:'Profile evaluation and shortlisting universities'
+//           },
+//           {
+//             number:'2',
+//             delay: 100,
+//             bgColor: "linear-gradient(135deg, #10B981, #059669)",
+//             heading:'Application Preparation',
+//             p:'SOP, LORs, and complete application documents'
+//           },
+//           {
+//             number:'3',
+//             delay: 200,
+//             heading:'Admission Processing',
+//             bgColor: "linear-gradient(135deg, #F59E0B, #D97706)",
+//             p:'Submit applications and follow up with universities'
+//           },
+//           {
+//             number:'4',
+//             delay: 0,
+//             bgColor: "linear-gradient(135deg, var(--primary-color), var(--primary-dark))",
+//             heading:'Visa Documentation',
+//             p:'Prepare complete visa application package'
+//           },
+//           {
+//             number:'5',
+//             delay: 100,
+//             bgColor: "linear-gradient(135deg, #14B8A6, #0D9488)",
+//             heading:'Visa Interview Prep',
+//             p:'Mock interviews and expert guidance'
+//           },
+//           {
+//             number:'6',
+//             delay: 200,
+//             bgColor: "linear-gradient(135deg, var(--secondary-color), var(--secondary-dark))",
+//             heading:'Pre-Departure Support',
+//             p:'Travel, accommodation, and orientation'
+//           }
+
+//         ],
+//          documents:[
+//         {
+//           name:'Academic Documents',
+//           aos: "fade-right",
+//           colorVar: "var(--primary-color)",
+//           icon:'fas fa-file-alt',
+//           list:[
+//             'Academic transcripts',
+//             'Degree certificates',
+//             'English proficiency scores',
+//             'Standardized test scores (GRE/GMAT)',
+//             'Statement of Purpose'
+//           ]
+//         },
+//         {
+//           name:'Personal & Financial',
+//           aos: "fade-left",
+//           colorVar: "var(--secondary-color)",
+//           icon:'fas fa-passport',
+//           list:[
+//             'Valid passport',
+//             'Passport-size photographs',
+//             'Bank statements',
+//             'Sponsor documents',
+//             'Acceptance letter from university'
+//           ]
+//         }
+//       ],
+//      questions:[
+//         {
+//           heading:'How long does the student visa process take?',
+//           open: false,
+//           p:'The processing time varies by country but typically ranges from 4-8 weeks. We recommend starting your application 3-6 months before your intended start date.'
+//         },
+//         {
+//           heading:'What is the minimum IELTS score required?',
+//           open: false,
+//           p:'Most universities require an overall band score of 6.0-7.0 for undergraduate programs and 6.5-7.5 for postgraduate programs. Requirements vary by institution.'
+//         },
+//         {
+//           heading:'Can I work while studying on a student visa?',
+//           open: false,
+//           p:'Yes, most countries allow international students to work part-time (usually 20 hours per week) during studies and full-time during breaks.'
+//         },
+//         {
+//           heading:'What are the costs involved?',
+//           open: false,
+//           p:'Costs vary by destination but include tuition fees, living expenses, visa application fees, and our service fees. We provide a detailed cost breakdown during consultation.'
+//         }
+
+//       ]
+//     }
+//   },
+//   {
+//     title: "Business Immigration",
+//     delay: 0,
+//     icon: "fas fa-chart-line",
+//     bgColor: "linear-gradient(135deg, #8B5CF6, #7C3AED)",
+//     description:
+//       "Entrepreneur and investor visa programs for business owners and investors.",
+//     link: "service-detail.html",
+//     popular: false,
+//     view:{
+//       slider:{name:'Business Immigration Services',heading:'Business Immigration Assistance',paragraph:'Get accepted to your dream university and secure your student visa'},
+//       about:{
+//         title:'Overview',
+//         p1:'Our Business Immigration service provides comprehensive support for students aspiring to pursue higher education abroad. We assist with university selection, application processing, visa documentation, and pre-departure guidance.',
+//         p2:'With partnerships with over 100 universities globally, we help you find the perfect program that matches your academic profile and career aspirations. Our expert team ensures your student visa application is complete, accurate, and submitted on time.',
+//         image:'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=500&fit=crop',
+//         storiess:[
+//           {
+//             icon:'fas fa-check-circle',
+//             heading:'Success Rate: 98%'
+//           },
+//           {
+//             icon:'fas fa-clock',
+//             heading:'Processing Time: 4-6 weeks'
+//           }
+//         ]
+//       },
+//         requirements:[
+//           {
+//           heading:'Academic Requirements',
+//           delay: 0,
+//           paragraph:[
+//             "Completion of previous education (Bachelor's/Master's)",
+//             "Minimum GPA/percentage as per university requirements",
+//             "English proficiency test scores (IELTS/TOEFL/PTE)",
+//             "Letter of acceptance from recognized institution"
+//           ]
+//           },
+//           {
+//           heading:'Financial Requirements',
+//           delay: 100,
+//           paragraph:[
+//             "Proof of funds for tuition and living expenses",
+//             "Bank statements (last 6 months)",
+//             "Sponsor documents or scholarship letters",
+//             "Tax returns and income proof of sponsors"
+//           ]
+//           }
+         
+//         ],
+//           process:[
+//           {
+//             number:'1',
+//             bgColor: "linear-gradient(135deg, #3B82F6, #2563EB)",
+//             delay: 0,
+//             heading:'Counseling & University Selection',
+//             p:'Profile evaluation and shortlisting universities'
+//           },
+//           {
+//             number:'2',
+//             delay: 100,
+//             bgColor: "linear-gradient(135deg, #10B981, #059669)",
+//             heading:'Application Preparation',
+//             p:'SOP, LORs, and complete application documents'
+//           },
+//           {
+//             number:'3',
+//             delay: 200,
+//             heading:'Admission Processing',
+//             bgColor: "linear-gradient(135deg, #F59E0B, #D97706)",
+//             p:'Submit applications and follow up with universities'
+//           },
+//           {
+//             number:'4',
+//             delay: 0,
+//             bgColor: "linear-gradient(135deg, var(--primary-color), var(--primary-dark))",
+//             heading:'Visa Documentation',
+//             p:'Prepare complete visa application package'
+//           },
+//           {
+//             number:'5',
+//             delay: 100,
+//             bgColor: "linear-gradient(135deg, #14B8A6, #0D9488)",
+//             heading:'Visa Interview Prep',
+//             p:'Mock interviews and expert guidance'
+//           },
+//           {
+//             number:'6',
+//             delay: 200,
+//             bgColor: "linear-gradient(135deg, var(--secondary-color), var(--secondary-dark))",
+//             heading:'Pre-Departure Support',
+//             p:'Travel, accommodation, and orientation'
+//           }
+
+//         ],
+//          documents:[
+//         {
+//           name:'Academic Documents',
+//           aos: "fade-right",
+//           colorVar: "var(--primary-color)",
+//           icon:'fas fa-file-alt',
+//           list:[
+//             'Academic transcripts',
+//             'Degree certificates',
+//             'English proficiency scores',
+//             'Standardized test scores (GRE/GMAT)',
+//             'Statement of Purpose'
+//           ]
+//         },
+//         {
+//           name:'Personal & Financial',
+//           aos: "fade-left",
+//           colorVar: "var(--secondary-color)",
+//           icon:'fas fa-passport',
+//           list:[
+//             'Valid passport',
+//             'Passport-size photographs',
+//             'Bank statements',
+//             'Sponsor documents',
+//             'Acceptance letter from university'
+//           ]
+//         }
+//       ],
+//      questions:[
+//         {
+//           heading:'How long does the student visa process take?',
+//           open: false,
+//           p:'The processing time varies by country but typically ranges from 4-8 weeks. We recommend starting your application 3-6 months before your intended start date.'
+//         },
+//         {
+//           heading:'What is the minimum IELTS score required?',
+//           open: false,
+//           p:'Most universities require an overall band score of 6.0-7.0 for undergraduate programs and 6.5-7.5 for postgraduate programs. Requirements vary by institution.'
+//         },
+//         {
+//           heading:'Can I work while studying on a student visa?',
+//           open: false,
+//           p:'Yes, most countries allow international students to work part-time (usually 20 hours per week) during studies and full-time during breaks.'
+//         },
+//         {
+//           heading:'What are the costs involved?',
+//           open: false,
+//           p:'Costs vary by destination but include tuition fees, living expenses, visa application fees, and our service fees. We provide a detailed cost breakdown during consultation.'
+//         }
+
+//       ]
+//     }
+//   },
+//   {
+//     title: "IELTS Coaching",
+//     delay: 100,
+//     icon: "fas fa-book-open",
+//     bgColor: "linear-gradient(135deg, #EC4899, #DB2777)",
+//     description:
+//       "Expert IELTS preparation with proven strategies to achieve your target band score.",
+//     link: "service-detail.html",
+//     popular: true,
+//      view:{
+//       slider:{name:'IELTS Coaching Services',heading:'IELTS Coaching Assistance',paragraph:'Get accepted to your dream university and secure your student visa'},
+//       about:{
+//         title:'Overview',
+//         p1:'Our IELTS Coaching service provides comprehensive support for students aspiring to pursue higher education abroad. We assist with university selection, application processing, visa documentation, and pre-departure guidance.',
+//         p2:'With partnerships with over 100 universities globally, we help you find the perfect program that matches your academic profile and career aspirations. Our expert team ensures your student visa application is complete, accurate, and submitted on time.',
+//         image:'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=500&fit=crop',
+//         storiess:[
+//           {
+//             icon:'fas fa-check-circle',
+//             heading:'Success Rate: 98%'
+//           },
+//           {
+//             icon:'fas fa-clock',
+//             heading:'Processing Time: 4-6 weeks'
+//           }
+//         ]
+//       },
+//         requirements:[
+//           {
+//           heading:'Academic Requirements',
+//           delay: 0,
+//           paragraph:[
+//             "Completion of previous education (Bachelor's/Master's)",
+//             "Minimum GPA/percentage as per university requirements",
+//             "English proficiency test scores (IELTS/TOEFL/PTE)",
+//             "Letter of acceptance from recognized institution"
+//           ]
+//           },
+//           {
+//           heading:'Financial Requirements',
+//           delay: 100,
+//           paragraph:[
+//             "Proof of funds for tuition and living expenses",
+//             "Bank statements (last 6 months)",
+//             "Sponsor documents or scholarship letters",
+//             "Tax returns and income proof of sponsors"
+//           ]
+//           }
+         
+//         ],
+//          process:[
+//           {
+//             number:'1',
+//             bgColor: "linear-gradient(135deg, #3B82F6, #2563EB)",
+//             delay: 0,
+//             heading:'Counseling & University Selection',
+//             p:'Profile evaluation and shortlisting universities'
+//           },
+//           {
+//             number:'2',
+//             delay: 100,
+//             bgColor: "linear-gradient(135deg, #10B981, #059669)",
+//             heading:'Application Preparation',
+//             p:'SOP, LORs, and complete application documents'
+//           },
+//           {
+//             number:'3',
+//             delay: 200,
+//             heading:'Admission Processing',
+//             bgColor: "linear-gradient(135deg, #F59E0B, #D97706)",
+//             p:'Submit applications and follow up with universities'
+//           },
+//           {
+//             number:'4',
+//             delay: 0,
+//             bgColor: "linear-gradient(135deg, var(--primary-color), var(--primary-dark))",
+//             heading:'Visa Documentation',
+//             p:'Prepare complete visa application package'
+//           },
+//           {
+//             number:'5',
+//             delay: 100,
+//             bgColor: "linear-gradient(135deg, #14B8A6, #0D9488)",
+//             heading:'Visa Interview Prep',
+//             p:'Mock interviews and expert guidance'
+//           },
+//           {
+//             number:'6',
+//             delay: 200,
+//             bgColor: "linear-gradient(135deg, var(--secondary-color), var(--secondary-dark))",
+//             heading:'Pre-Departure Support',
+//             p:'Travel, accommodation, and orientation'
+//           }
+
+//         ],
+//           documents:[
+//         {
+//           name:'Academic Documents',
+//           aos: "fade-right",
+//           colorVar: "var(--primary-color)",
+//           icon:'fas fa-file-alt',
+//           list:[
+//             'Academic transcripts',
+//             'Degree certificates',
+//             'English proficiency scores',
+//             'Standardized test scores (GRE/GMAT)',
+//             'Statement of Purpose'
+//           ]
+//         },
+//         {
+//           name:'Personal & Financial',
+//           aos: "fade-left",
+//           colorVar: "var(--secondary-color)",
+//           icon:'fas fa-passport',
+//           list:[
+//             'Valid passport',
+//             'Passport-size photographs',
+//             'Bank statements',
+//             'Sponsor documents',
+//             'Acceptance letter from university'
+//           ]
+//         }
+//       ],
+//      questions:[
+//         {
+//           heading:'How long does the student visa process take?',
+//           open: false,
+//           p:'The processing time varies by country but typically ranges from 4-8 weeks. We recommend starting your application 3-6 months before your intended start date.'
+//         },
+//         {
+//           heading:'What is the minimum IELTS score required?',
+//           open: false,
+//           p:'Most universities require an overall band score of 6.0-7.0 for undergraduate programs and 6.5-7.5 for postgraduate programs. Requirements vary by institution.'
+//         },
+//         {
+//           heading:'Can I work while studying on a student visa?',
+//           open: false,
+//           p:'Yes, most countries allow international students to work part-time (usually 20 hours per week) during studies and full-time during breaks.'
+//         },
+//         {
+//           heading:'What are the costs involved?',
+//           open: false,
+//           p:'Costs vary by destination but include tuition fees, living expenses, visa application fees, and our service fees. We provide a detailed cost breakdown during consultation.'
+//         }
+
+//       ]
+//     }
+//   },
+//   {
+//     title: "Job Assistance",
+//     delay: 200,
+//     icon: "fas fa-user-tie",
+//     bgColor: "linear-gradient(135deg, #14B8A6, #0D9488)",
+//     description:
+//       "Career support, resume building, and job placement services in your destination country.",
+//     link: "service-detail.html",
+//     popular: false,
+//       view:{
+//       slider:{name:'Job Assistance Services',heading:'Job Assistance Assistance',paragraph:'Get accepted to your dream university and secure your student visa'},
+//       about:{
+//         title:'Overview',
+//         p1:'Our Job Assistance service provides comprehensive support for students aspiring to pursue higher education abroad. We assist with university selection, application processing, visa documentation, and pre-departure guidance.',
+//         p2:'With partnerships with over 100 universities globally, we help you find the perfect program that matches your academic profile and career aspirations. Our expert team ensures your student visa application is complete, accurate, and submitted on time.',
+//         image:'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=500&fit=crop',
+//         storiess:[
+//           {
+//             icon:'fas fa-check-circle',
+//             heading:'Success Rate: 98%'
+//           },
+//           {
+//             icon:'fas fa-clock',
+//             heading:'Processing Time: 4-6 weeks'
+//           }
+//         ]
+//       },
+//         requirements:[
+//           {
+//           heading:'Academic Requirements',
+//           delay: 0,
+//           paragraph:[
+//             "Completion of previous education (Bachelor's/Master's)",
+//             "Minimum GPA/percentage as per university requirements",
+//             "English proficiency test scores (IELTS/TOEFL/PTE)",
+//             "Letter of acceptance from recognized institution"
+//           ]
+//           },
+//           {
+//           heading:'Financial Requirements',
+//           delay: 100,
+//           paragraph:[
+//             "Proof of funds for tuition and living expenses",
+//             "Bank statements (last 6 months)",
+//             "Sponsor documents or scholarship letters",
+//             "Tax returns and income proof of sponsors"
+//           ]
+//           }
+         
+//         ],
+//          process:[
+//           {
+//             number:'1',
+//             bgColor: "linear-gradient(135deg, #3B82F6, #2563EB)",
+//             delay: 0,
+//             heading:'Counseling & University Selection',
+//             p:'Profile evaluation and shortlisting universities'
+//           },
+//           {
+//             number:'2',
+//             delay: 100,
+//             bgColor: "linear-gradient(135deg, #10B981, #059669)",
+//             heading:'Application Preparation',
+//             p:'SOP, LORs, and complete application documents'
+//           },
+//           {
+//             number:'3',
+//             delay: 200,
+//             heading:'Admission Processing',
+//             bgColor: "linear-gradient(135deg, #F59E0B, #D97706)",
+//             p:'Submit applications and follow up with universities'
+//           },
+//           {
+//             number:'4',
+//             delay: 0,
+//             bgColor: "linear-gradient(135deg, var(--primary-color), var(--primary-dark))",
+//             heading:'Visa Documentation',
+//             p:'Prepare complete visa application package'
+//           },
+//           {
+//             number:'5',
+//             delay: 100,
+//             bgColor: "linear-gradient(135deg, #14B8A6, #0D9488)",
+//             heading:'Visa Interview Prep',
+//             p:'Mock interviews and expert guidance'
+//           },
+//           {
+//             number:'6',
+//             delay: 200,
+//             bgColor: "linear-gradient(135deg, var(--secondary-color), var(--secondary-dark))",
+//             heading:'Pre-Departure Support',
+//             p:'Travel, accommodation, and orientation'
+//           }
+
+//         ],
+//           documents:[
+//         {
+//           name:'Academic Documents',
+//           aos: "fade-right",
+//           colorVar: "var(--primary-color)",
+//           icon:'fas fa-file-alt',
+//           list:[
+//             'Academic transcripts',
+//             'Degree certificates',
+//             'English proficiency scores',
+//             'Standardized test scores (GRE/GMAT)',
+//             'Statement of Purpose'
+//           ]
+//         },
+//         {
+//           name:'Personal & Financial',
+//           aos: "fade-left",
+//           colorVar: "var(--secondary-color)",
+//           icon:'fas fa-passport',
+//           list:[
+//             'Valid passport',
+//             'Passport-size photographs',
+//             'Bank statements',
+//             'Sponsor documents',
+//             'Acceptance letter from university'
+//           ]
+//         }
+//       ],
+//     questions:[
+//         {
+//           heading:'How long does the student visa process take?',
+//           open: false,
+//           p:'The processing time varies by country but typically ranges from 4-8 weeks. We recommend starting your application 3-6 months before your intended start date.'
+//         },
+//         {
+//           heading:'What is the minimum IELTS score required?',
+//           open: false,
+//           p:'Most universities require an overall band score of 6.0-7.0 for undergraduate programs and 6.5-7.5 for postgraduate programs. Requirements vary by institution.'
+//         },
+//         {
+//           heading:'Can I work while studying on a student visa?',
+//           open: false,
+//           p:'Yes, most countries allow international students to work part-time (usually 20 hours per week) during studies and full-time during breaks.'
+//         },
+//         {
+//           heading:'What are the costs involved?',
+//           open: false,
+//           p:'Costs vary by destination but include tuition fees, living expenses, visa application fees, and our service fees. We provide a detailed cost breakdown during consultation.'
+//         }
+
+//       ]
+//     }
+//   },
+//   {
+//     title: "PR Consultancy",
+//     delay: 300,
+//     icon: "fas fa-home",
+//     bgColor: "linear-gradient(135deg, var(--secondary-color), var(--secondary-dark))",
+//     description:
+//       "Permanent Residence applications for Canada, Australia, New Zealand, and more.",
+//     link: "service-detail.html",
+//     popular: true,
+//        view:{
+//       slider:{name:'PR Consultancy Services',heading:'PR Consultancy Assistance',paragraph:'Get accepted to your dream university and secure your student visa'},
+//       about:{
+//         title:'Overview',
+//         p1:'Our PR Consultancy service provides comprehensive support for students aspiring to pursue higher education abroad. We assist with university selection, application processing, visa documentation, and pre-departure guidance.',
+//         p2:'With partnerships with over 100 universities globally, we help you find the perfect program that matches your academic profile and career aspirations. Our expert team ensures your student visa application is complete, accurate, and submitted on time.',
+//         image:'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=500&fit=crop',
+//         storiess:[
+//           {
+//             icon:'fas fa-check-circle',
+//             heading:'Success Rate: 98%'
+//           },
+//           {
+//             icon:'fas fa-clock',
+//             heading:'Processing Time: 4-6 weeks'
+//           }
+//         ]
+//       },
+//         requirements:[
+//           {
+//           heading:'Academic Requirements',
+//           delay: 0,
+//           paragraph:[
+//             "Completion of previous education (Bachelor's/Master's)",
+//             "Minimum GPA/percentage as per university requirements",
+//             "English proficiency test scores (IELTS/TOEFL/PTE)",
+//             "Letter of acceptance from recognized institution"
+//           ]
+//           },
+//           {
+//           heading:'Financial Requirements',
+//           delay: 100,
+//           paragraph:[
+//             "Proof of funds for tuition and living expenses",
+//             "Bank statements (last 6 months)",
+//             "Sponsor documents or scholarship letters",
+//             "Tax returns and income proof of sponsors"
+//           ]
+//           }
+         
+//         ],
+//          process:[
+//           {
+//             number:'1',
+//             bgColor: "linear-gradient(135deg, #3B82F6, #2563EB)",
+//             delay: 0,
+//             heading:'Counseling & University Selection',
+//             p:'Profile evaluation and shortlisting universities'
+//           },
+//           {
+//             number:'2',
+//             delay: 100,
+//             bgColor: "linear-gradient(135deg, #10B981, #059669)",
+//             heading:'Application Preparation',
+//             p:'SOP, LORs, and complete application documents'
+//           },
+//           {
+//             number:'3',
+//             delay: 200,
+//             heading:'Admission Processing',
+//             bgColor: "linear-gradient(135deg, #F59E0B, #D97706)",
+//             p:'Submit applications and follow up with universities'
+//           },
+//           {
+//             number:'4',
+//             delay: 0,
+//             bgColor: "linear-gradient(135deg, var(--primary-color), var(--primary-dark))",
+//             heading:'Visa Documentation',
+//             p:'Prepare complete visa application package'
+//           },
+//           {
+//             number:'5',
+//             delay: 100,
+//             bgColor: "linear-gradient(135deg, #14B8A6, #0D9488)",
+//             heading:'Visa Interview Prep',
+//             p:'Mock interviews and expert guidance'
+//           },
+//           {
+//             number:'6',
+//             delay: 200,
+//             bgColor: "linear-gradient(135deg, var(--secondary-color), var(--secondary-dark))",
+//             heading:'Pre-Departure Support',
+//             p:'Travel, accommodation, and orientation'
+//           }
+
+//         ],
+//         documents:[
+//         {
+//           name:'Academic Documents',
+//           aos: "fade-right",
+//           colorVar: "var(--primary-color)",
+//           icon:'fas fa-file-alt',
+//           list:[
+//             'Academic transcripts',
+//             'Degree certificates',
+//             'English proficiency scores',
+//             'Standardized test scores (GRE/GMAT)',
+//             'Statement of Purpose'
+//           ]
+//         },
+//         {
+//           name:'Personal & Financial',
+//           aos: "fade-left",
+//           colorVar: "var(--secondary-color)",
+//           icon:'fas fa-passport',
+//           list:[
+//             'Valid passport',
+//             'Passport-size photographs',
+//             'Bank statements',
+//             'Sponsor documents',
+//             'Acceptance letter from university'
+//           ]
+//         }
+//       ],
+//     questions:[
+//         {
+//           heading:'How long does the student visa process take?',
+//           open: false,
+//           p:'The processing time varies by country but typically ranges from 4-8 weeks. We recommend starting your application 3-6 months before your intended start date.'
+//         },
+//         {
+//           heading:'What is the minimum IELTS score required?',
+//           open: false,
+//           p:'Most universities require an overall band score of 6.0-7.0 for undergraduate programs and 6.5-7.5 for postgraduate programs. Requirements vary by institution.'
+//         },
+//         {
+//           heading:'Can I work while studying on a student visa?',
+//           open: false,
+//           p:'Yes, most countries allow international students to work part-time (usually 20 hours per week) during studies and full-time during breaks.'
+//         },
+//         {
+//           heading:'What are the costs involved?',
+//           open: false,
+//           p:'Costs vary by destination but include tuition fees, living expenses, visa application fees, and our service fees. We provide a detailed cost breakdown during consultation.'
+//         }
+
+//       ]
+//     }
+//   }
+//   ];
+
+
+export const immigrationServices = [
+  {
+    title: "Study Visa",
+    delay: 0,
+    bgColor: "linear-gradient(135deg, #3B82F6, #2563EB)",
+    icon: "fas fa-graduation-cap",
+    description:
+      "Guidance for securing admissions and study visas for leading international universities.",
+    link: "service-detail.html",
+    popular: true,
+    view: {
+      slider: {
+        name: "Study Visa Services",
+        heading: "Study Visa Assistance",
+        paragraph:
+          "Gain access to global education opportunities with professional visa guidance.",
+      },
+      about: {
+        title: "Overview",
+        p1:
+          "Our Study Visa service helps students apply for international education programs confidently. From choosing the right program to completing necessary paperwork, we ensure a smooth journey.",
+        p2:
+          "We assist with documentation, admission support, and personalized visa guidance for your chosen destination.",
+        image:
+          "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=500&fit=crop",
+        storiess: [
+          { icon: "fas fa-check-circle", heading: "High Approval Success" },
+          { icon: "fas fa-clock", heading: "4-8 Weeks Processing" },
+        ],
+      },
+      requirements: [
+        {
+          heading: "Academic Requirements",
+          delay: 0,
+          paragraph: [
+            "Previous education transcripts",
+            "Minimum percentage based on university requirements",
+            "Valid English proficiency score",
+            "Letter of Acceptance",
+          ],
+        },
+        {
+          heading: "Financial Requirements",
+          delay: 100,
+          paragraph: [
+            "Proof of tuition & living funds",
+            "Latest bank statements",
+            "Sponsorship or scholarship proof",
+            "Financial background documents",
+          ],
+        },
+      ],
+      process: [
+        {
+          number: "1",
+          bgColor: "linear-gradient(135deg, #3B82F6, #2563EB)",
+          delay: 0,
+          heading: "Counselling & Program Selection",
+          p: "Choosing the right course and country",
+        },
+        {
+          number: "2",
+          delay: 100,
+          bgColor: "linear-gradient(135deg, #10B981, #059669)",
+          heading: "Application Filing",
+          p: "Preparing academic and visa paperwork",
+        },
+        {
+          number: "3",
+          delay: 200,
+          heading: "Admission Support",
+          bgColor: "linear-gradient(135deg, #F59E0B, #D97706)",
+          p: "Submitting and managing applications",
+        },
+        {
+          number: "4",
+          delay: 0,
+          bgColor: "linear-gradient(135deg, var(--primary-color), var(--primary-dark))",
+          heading: "Visa Documentation",
+          p: "Submitting complete visa file",
+        },
+        {
+          number: "5",
+          delay: 100,
+          bgColor: "linear-gradient(135deg, #14B8A6, #0D9488)",
+          heading: "Interview Guidance",
+          p: "Mock sessions for confidence",
+        },
+        {
+          number: "6",
+          delay: 200,
+          bgColor: "linear-gradient(135deg, var(--secondary-color), var(--secondary-dark))",
+          heading: "Travel Support",
+          p: "Accommodation and pre-departure briefing",
+        },
+      ],
+      documents: [
+        {
+          name: "Academic Documents",
+          aos: "fade-right",
+          colorVar: "var(--primary-color)",
+          icon: "fas fa-file-alt",
+          list: [
+            "Mark sheets & transcripts",
+            "Graduation certificates",
+            "IELTS/TOEFL scores",
+            "Admission documents",
+            "SOP and recommendation letters",
+          ],
+        },
+        {
+          name: "Personal & Financial",
+          aos: "fade-left",
+          colorVar: "var(--secondary-color)",
+          icon: "fas fa-passport",
+          list: [
+            "Valid passport",
+            "Recent photographs",
+            "Financial papers",
+            "Sponsor proof",
+            "Offer Letter",
+          ],
+        },
+      ],
+      questions: [
+        {
+          heading: "What is the processing time?",
+          open: false,
+          p:
+            "Most countries take 4–8 weeks depending on intake and application time.",
+        },
+        {
+          heading: "What English score is required?",
+          open: false,
+          p:
+            "Bachelor’s: IELTS 6.0+ | Master’s: IELTS 6.5+ (varies by institution).",
+        },
+        {
+          heading: "Can I work abroad on a student visa?",
+          open: false,
+          p:
+            "Yes, most countries allow up to 20 hrs/week during study and full-time in holidays.",
+        },
+        {
+          heading: "What costs should I expect?",
+          open: false,
+          p:
+            "Tuition, visa fees, medical, travel, and living costs depending on destination.",
+        },
+      ],
+    },
+  },
+
+  /* ---------------------------------------------------------------------------
+     2️⃣ WORK VISA — Re-written Content
+  --------------------------------------------------------------------------- */
+  {
+    title: "Work Visa",
+    delay: 100,
+    icon: "fas fa-briefcase",
+    bgColor: "linear-gradient(135deg, #10B981, #059669)",
+    description:
+      "Work permit support for skilled workers, professionals, and sponsored employment worldwide.",
+    link: "service-detail.html",
+    popular: false,
+    view: {
+      slider: {
+        name: "Work Visa Services",
+        heading: "Work Visa Assistance",
+        paragraph:
+          "Secure international employment with proper work permit and employer documentation support.",
+      },
+      about: {
+        title: "Overview",
+        p1:
+          "We guide skilled workers and professionals to obtain employment-based visas. Our team assists with documentation, employer requirements, and country-specific rules.",
+        p2:
+          "We help you meet eligibility including job offers, skill assessments, and sponsorship requirements for your chosen destination.",
+        image:
+          "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=500&fit=crop",
+        storiess: [
+          { icon: "fas fa-check-circle", heading: "Trusted Work Permit Support" },
+          { icon: "fas fa-clock", heading: "Timely Processing Assistance" },
+        ],
+      },
+      requirements: [
+        {
+          heading: "Eligibility Requirements",
+          delay: 0,
+          paragraph: [
+            "Relevant professional qualification",
+            "Valid job offer or sponsorship",
+            "English/Local language proficiency",
+            "Work experience certificates",
+          ],
+        },
+        {
+          heading: "Financial & Legal",
+          delay: 100,
+          paragraph: [
+            "Valid passport & identification",
+            "Payroll & employment compliance",
+            "Police clearance certificate",
+            "Medical examination (if needed)",
+          ],
+        },
+      ],
+      process: [
+        {
+          number: "1",
+          bgColor: "linear-gradient(135deg, #3B82F6, #2563EB)",
+          delay: 0,
+          heading: "Profile Evaluation",
+          p: "Skill assessment and eligibility check",
+        },
+        {
+          number: "2",
+          delay: 100,
+          bgColor: "linear-gradient(135deg, #10B981, #059669)",
+          heading: "Employer/Job Offer",
+          p: "Guidance for securing employment",
+        },
+        {
+          number: "3",
+          delay: 200,
+          heading: "Documentation",
+          bgColor: "linear-gradient(135deg, #F59E0B, #D97706)",
+          p: "Work permit documentation and verification",
+        },
+        {
+          number: "4",
+          delay: 0,
+          bgColor:
+            "linear-gradient(135deg, var(--primary-color), var(--primary-dark))",
+          heading: "Visa Filing",
+          p: "Submitting and tracking work visa file",
+        },
+        {
+          number: "5",
+          delay: 100,
+          bgColor: "linear-gradient(135deg, #14B8A6, #0D9488)",
+          heading: "Travel & Settlement",
+          p: "Post-visa support based on destination",
+        },
+      ],
+      documents: [
+        {
+          name: "Employment Documents",
+          aos: "fade-right",
+          colorVar: "var(--primary-color)",
+          icon: "fas fa-file-alt",
+          list: [
+            "Offer letter",
+            "Experience letters",
+            "Resume",
+            "Employment contract",
+            "Skill assessment reports",
+          ],
+        },
+        {
+          name: "Personal & Mandatory Papers",
+          aos: "fade-left",
+          colorVar: "var(--secondary-color)",
+          icon: "fas fa-passport",
+          list: [
+            "Passport",
+            "Photographs",
+            "Police clearance",
+            "Medical report",
+            "Proof of funds (if applicable)",
+          ],
+        },
+      ],
+      questions: [
+        {
+          heading: "Can I apply without a job offer?",
+          open: false,
+          p:
+            "Some countries allow point-based applications, but most require an employer sponsor.",
+        },
+        {
+          heading: "How long is the work visa valid?",
+          open: false,
+          p:
+            "Typically 1–5 years depending on employer contract and country rules.",
+        },
+        {
+          heading: "Can I take my family along?",
+          open: false,
+          p:
+            "Yes, many countries offer dependent visas for spouse and children.",
+        },
+      ],
+    },
+  },
+
+  /* ---------------------------------------------------------------------------
+     3️⃣ VISITOR VISA — Re-written Content
+  --------------------------------------------------------------------------- */
+  {
+    title: "Visitor Visa",
+    delay: 200,
+    icon: "fas fa-plane",
+    bgColor: "linear-gradient(135deg, #F59E0B, #D97706)",
+    description:
+      "Tourist and family visit visa assistance for short-term international travel.",
+    link: "service-detail.html",
+    popular: false,
+    view: {
+      slider: {
+        name: "Visitor Visa Services",
+        heading: "Visitor Visa Assistance",
+        paragraph:
+          "Travel with confidence — complete help for tourism, business trips, and family visits.",
+      },
+      about: {
+        title: "Overview",
+        p1:
+          "We help travelers obtain visit visas for tourism, business travel, and visiting family overseas.",
+        p2:
+          "We ensure proper documentation, travel purpose justification, and itinerary support for strong visa approvals.",
+        image:
+          "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=500&fit=crop",
+        storiess: [
+          { icon: "fas fa-check-circle", heading: "Easy Tourist Visa Filing" },
+          { icon: "fas fa-clock", heading: "Quick Processing Support" },
+        ],
+      },
+      requirements: [
+        {
+          heading: "Basic Requirements",
+          delay: 0,
+          paragraph: [
+            "Purpose of visit (tourism/family/business)",
+            "Return travel confirmation",
+            "Accommodation details",
+            "Proof of financial capability",
+          ],
+        },
+        {
+          heading: "Additional Support",
+          delay: 100,
+          paragraph: [
+            "Invitation letter (if visiting family/business)",
+            "Travel insurance",
+            "Valid documents with accuracy",
+            "Background verification",
+          ],
+        },
+      ],
+      process: [
+        {
+          number: "1",
+          bgColor: "linear-gradient(135deg, #3B82F6, #2563EB)",
+          delay: 0,
+          heading: "Consultation",
+          p: "Understanding travel purpose",
+        },
+        {
+          number: "2",
+          delay: 100,
+          bgColor: "linear-gradient(135deg, #10B981, #059669)",
+          heading: "Document Filing",
+          p: "Ensuring accurate documentation",
+        },
+        {
+          number: "3",
+          delay: 200,
+          heading: "Visa Submission",
+          bgColor: "linear-gradient(135deg, #F59E0B, #D97706)",
+          p: "Application submission and tracking",
+        },
+      ],
+      documents: [
+        {
+          name: "Travel Documents",
+          aos: "fade-right",
+          colorVar: "var(--primary-color)",
+          icon: "fas fa-file-alt",
+          list: [
+            "Passport",
+            "Photographs",
+            "Bank statements",
+            "Travel itinerary",
+            "Accommodation details",
+          ],
+        },
+        {
+          name: "Supporting Documents",
+          aos: "fade-left",
+          colorVar: "var(--secondary-color)",
+          icon: "fas fa-passport",
+          list: [
+            "Invitation letter (if applicable)",
+            "Income proof",
+            "Business/employment proof",
+            "Return flight ticket",
+          ],
+        },
+      ],
+      questions: [
+        {
+          heading: "How long can I stay on a visit visa?",
+          open: false,
+          p:
+            "Typically 30–180 days depending on country regulations.",
+        },
+        {
+          heading: "Can I convert a visit visa to a work visa?",
+          open: false,
+          p:
+            "Most countries do not allow conversion while inside the country — rules vary.",
+        },
+      ],
+    },
+  },
+
+  /* ---------------------------------------------------------------------------
+     4️⃣ SKILLED IMMIGRATION — Re-written Content
+  --------------------------------------------------------------------------- */
+  {
+    title: "Skilled Immigration",
+    delay: 300,
+    icon: "fas fa-award",
+    bgColor: "linear-gradient(135deg, var(--primary-color), var(--primary-dark))",
+    description:
+      "Points-based permanent residency programs for skilled workers globally.",
+    link: "service-detail.html",
+    popular: true,
+    view: {
+      slider: {
+        name: "Skilled Immigration Services",
+        heading: "Skilled Immigration Assistance",
+        paragraph:
+          "Migrate permanently through points-based skilled worker programs.",
+      },
+      about: {
+        title: "Overview",
+        p1:
+          "We help qualified professionals settle abroad through skilled immigration pathways such as Canada Express Entry, Australia SkillSelect, and others.",
+        p2:
+          "Our experts evaluate your points, assist with documentation, and guide you through nomination and PR filing.",
+        image:
+          "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=500&fit=crop",
+        storiess: [
+          { icon: "fas fa-check-circle", heading: "Strong PR Filing Support" },
+          { icon: "fas fa-clock", heading: "Step-by-Step Guidance" },
+        ],
+      },
+      requirements: [
+        {
+          heading: "Eligibility Criteria",
+          delay: 0,
+          paragraph: [
+            "Education and skill qualifications",
+            "Work experience with proof",
+            "Language proficiency score",
+            "Points-based eligibility score",
+          ],
+        },
+        {
+          heading: "Legal & Financial",
+          delay: 100,
+          paragraph: [
+            "Identity & travel documents",
+            "Medical fitness",
+            "Police verification",
+            "Proof of settlement funds",
+          ],
+        },
+      ],
+      process: [
+        {
+          number: "1",
+          bgColor: "linear-gradient(135deg, #3B82F6, #2563EB)",
+          delay: 0,
+          heading: "Profile Assessment",
+          p: "Checking points & eligibility",
+        },
+        {
+          number: "2",
+          delay: 100,
+          bgColor: "linear-gradient(135deg, #10B981, #059669)",
+          heading: "Skill Evaluation",
+          p: "Submitting skill recognition documents",
+        },
+        {
+          number: "3",
+          delay: 200,
+          heading: "ITA & PR Filing",
+          bgColor: "linear-gradient(135deg, #F59E0B, #D97706)",
+          p: "Permanent residency application submission",
+        },
+      ],
+      documents: [
+        {
+          name: "Core Documents",
+          aos: "fade-right",
+          colorVar: "var(--primary-color)",
+          icon: "fas fa-file-alt",
+          list: [
+            "Education certificates",
+            "Skill assessment report",
+            "Passport",
+            "Police clearance",
+            "Medical report",
+          ],
+        },
+        {
+          name: "Financial Proof",
+          aos: "fade-left",
+          colorVar: "var(--secondary-color)",
+          icon: "fas fa-passport",
+          list: [
+            "Proof of funds",
+            "Bank statements",
+            "Employment proof",
+            "Tax documents",
+          ],
+        },
+      ],
+      questions: [
+        {
+          heading: "How long does PR take?",
+          open: false,
+          p:
+            "Usually 6–12 months based on country and documentation accuracy.",
+        },
+        {
+          heading: "Can my family accompany me?",
+          open: false,
+          p:
+            "Yes, spouse and dependent children can be included in your PR file.",
+        },
+      ],
+    },
+  },
+
+  /* ---------------------------------------------------------------------------
+     5️⃣ BUSINESS IMMIGRATION — Re-written Content
+  --------------------------------------------------------------------------- */
+  {
+    title: "Business Immigration",
+    delay: 0,
+    icon: "fas fa-chart-line",
+    bgColor: "linear-gradient(135deg, #8B5CF6, #7C3AED)",
+    description:
+      "Entrepreneur, investor, and startup visa guidance for business-focused immigration.",
+    link: "service-detail.html",
+    popular: false,
+    view: {
+      slider: {
+        name: "Business Immigration Services",
+        heading: "Business Immigration Assistance",
+        paragraph:
+          "Expand your business globally with investor and entrepreneur visa solutions.",
+      },
+      about: {
+        title: "Overview",
+        p1:
+          "We assist investors and entrepreneurs applying for business-based immigration programs. Our services include investment planning, business cover letters, and financial documentation.",
+        p2:
+          "We help you meet minimum investment criteria, business plans, and legal requirements for your target country.",
+        image:
+          "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=500&fit=crop",
+        storiess: [
+          { icon: "fas fa-check-circle", heading: "Investor-Friendly Support" },
+          { icon: "fas fa-clock", heading: "Smooth Processing Guidance" },
+        ],
+      },
+      requirements: [
+        {
+          heading: "Eligibility Requirements",
+          delay: 0,
+          paragraph: [
+            "Proof of net worth",
+            "Business ownership experience",
+            "Approved investment funds",
+            "Compliant business plan",
+          ],
+        },
+        {
+          heading: "Documentation Required",
+          delay: 100,
+          paragraph: [
+            "Source of funds verification",
+            "Financial history",
+            "Tax records",
+            "Legal business certificates",
+          ],
+        },
+      ],
+      process: [
+        {
+          number: "1",
+          bgColor: "linear-gradient(135deg, #3B82F6, #2563EB)",
+          delay: 0,
+          heading: "Business Evaluation",
+          p: "Investment and concept review",
+        },
+        {
+          number: "2",
+          delay: 100,
+          bgColor: "linear-gradient(135deg, #10B981, #059669)",
+          heading: "Plan & Documentation",
+          p: "Preparing business proposal",
+        },
+        {
+          number: "3",
+          delay: 200,
+          heading: "Visa Submission",
+          bgColor: "linear-gradient(135deg, #F59E0B, #D97706)",
+          p: "Application and compliance checks",
+        },
+      ],
+      documents: [
+        {
+          name: "Financial Documents",
+          aos: "fade-right",
+          colorVar: "var(--primary-color)",
+          icon: "fas fa-file-alt",
+          list: [
+            "Net worth proof",
+            "Business proof",
+            "Tax filings",
+            "Investment statements",
+          ],
+        },
+        {
+          name: "Business Documents",
+          aos: "fade-left",
+          colorVar: "var(--secondary-color)",
+          icon: "fas fa-passport",
+          list: [
+            "Business plan",
+            "Registration documents",
+            "Partnership papers",
+            "Revenue and ownership proof",
+          ],
+        },
+      ],
+      questions: [
+        {
+          heading: "What is the minimum investment?",
+          open: false,
+          p:
+            "It varies by country and program, starting from small business setup to high-value investments.",
+        },
+      ],
+    },
+  },
+
+  /* ---------------------------------------------------------------------------
+     6️⃣ IELTS COACHING — Re-written Content
+  --------------------------------------------------------------------------- */
+  {
+    title: "IELTS Coaching",
+    delay: 100,
+    icon: "fas fa-book-open",
+    bgColor: "linear-gradient(135deg, #EC4899, #DB2777)",
+    description:
+      "Training for IELTS with expert coaching and proven band improvement strategies.",
+    link: "service-detail.html",
+    popular: true,
+    view: {
+     slider: {
+        name: 'IELTS Coaching Services',
+        heading: 'IELTS Coaching Assistance',
+        paragraph: 'Achieve your desired IELTS score with professional instructors and proven strategies.'
+      },
+      about: {
+        title: 'Overview',
+        p1:
+          'Our IELTS coaching program improves your listening, reading, writing, and speaking skills with personalized learning.',
+        p2:
+          'Our trainers help you understand exam patterns and score points effectively with structured learning modules.',
+        image:
+          'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=500&fit=crop',
+        storiess: [
+          { icon: 'fas fa-check-circle', heading: 'High Band Achievements' },
+          { icon: 'fas fa-clock', heading: 'Flexible Batches' },
+        ],
+      },
+      requirements: [
+        {
+          heading: 'For Enrollment',
+          delay: 0,
+          paragraph: [
+            'Basic English knowledge',
+            'Valid ID',
+            'Desired score goal',
+            'Commitment for practice'
+          ]
+        },
+        {
+          heading: 'Who is Eligible?',
+          delay: 100,
+          paragraph: [
+            'Students planning to study abroad',
+            'Working professionals',
+            'Migration applicants',
+            'Anyone aiming for IELTS certification'
+          ]
+        }
+      ],
+      process: [
+        {
+          number: '1',
+          bgColor: 'linear-gradient(135deg, #3B82F6, #2563EB)',
+          delay: 0,
+          heading: 'Assessment Test',
+          p: 'Baseline evaluation for personalized planning'
+        },
+        {
+          number: '2',
+          delay: 100,
+          bgColor: 'linear-gradient(135deg, #10B981, #059669)',
+          heading: 'Module Training',
+          p: 'Focused sessions for each skill area'
+        },
+        {
+          number: '3',
+          delay: 200,
+          heading: 'Mock Tests & Feedback',
+          bgColor: 'linear-gradient(135deg, #F59E0B, #D97706)',
+          p: 'Simulated tests to boost confidence'
+        }
+      ],
+      documents: [
+        {
+          name: 'Identity Documents',
+          aos: 'fade-right',
+          colorVar: 'var(--primary-color)',
+          icon: 'fas fa-file-alt',
+          list: [
+            'Valid ID proof',
+            'Passport or Aadhar (if needed)',
+            'Registration form',
+            'Passport-size photographs'
+          ]
+        }
+      ],
+      questions: [
+        {
+          heading: 'How long is the course?',
+          open: false,
+          p: 'Typically 1–2 months depending on batch and speed of learning.'
+        },
+        {
+          heading: 'Do you provide study material?',
+          open: false,
+          p: 'Yes, updated exam material and practice tests are included.'
+        }
+      ]
+    }
+  },
+
+  /* ---------------------------------------------------------------------------
+     7️⃣ JOB ASSISTANCE — Re-written Content
+  --------------------------------------------------------------------------- */
+  {
+    title: 'Job Assistance',
+    delay: 200,
+    icon: 'fas fa-user-tie',
+    bgColor: 'linear-gradient(135deg, #14B8A6, #0D9488)',
+    description:
+      'Career support, resume building, job search, and placement guidance abroad.',
+    link: 'service-detail.html',
+    popular: false,
+    view: {
+      slider: {
+        name: 'Job Assistance Services',
+        heading: 'Job Assistance Support',
+        paragraph: 'Boost your international career with guidance and placement support.'
+      },
+      about: {
+        title: 'Overview',
+        p1:
+          'Our job assistance services connect skilled professionals with international career opportunities.',
+        p2:
+          'We help improve resume quality, prepare for job interviews, and find positions that match your profile.',
+        image:
+          'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=500&fit=crop',
+        storiess: [
+          { icon: 'fas fa-check-circle', heading: 'Strong Career Network' },
+          { icon: 'fas fa-clock', heading: 'Tailored Career Guidance' },
+        ],
+      },
+      requirements: [
+        {
+          heading: 'Eligibility',
+          delay: 0,
+          paragraph: [
+            'Skilled qualification',
+            'Updated resume',
+            'Work experience certificates',
+            'Valid work authorization (if required)'
+          ]
+        },
+        {
+          heading: 'Job Search Support',
+          delay: 100,
+          paragraph: [
+            'Resume writing help',
+            'Interview coaching',
+            'Company & job portal connections',
+            'Profile exposure to employers'
+          ]
+        }
+      ],
+      process: [
+        {
+          number: '1',
+          bgColor: 'linear-gradient(135deg, #3B82F6, #2563EB)',
+          delay: 0,
+          heading: 'Career Assessment',
+          p: 'Reviewing skills and strengths'
+        },
+        {
+          number: '2',
+          delay: 100,
+          bgColor: 'linear-gradient(135deg, #10B981, #059669)',
+          heading: 'Application Support',
+          p: 'Resume and profile building'
+        },
+        {
+          number: '3',
+          delay: 200,
+          heading: 'Interview Preparation',
+          bgColor: 'linear-gradient(135deg, #F59E0B, #D97706)',
+          p: 'Mock interviews and employer follow-ups'
+        }
+      ],
+      documents: [
+        {
+          name: 'Career Documents',
+          aos: 'fade-right',
+          colorVar: 'var(--primary-color)',
+          icon: 'fas fa-file-alt',
+          list: [
+            'Resume/CV',
+            'Experience certificates',
+            'Educational certificates',
+            'ID proof'
+          ]
+        }
+      ],
+      questions: [
+        {
+          heading: 'Do you guarantee a job?',
+          open: false,
+          p:
+            'We provide support and opportunities, but job offers depend on employer hiring decisions.'
+        }
+      ]
+    }
+  },
+
+  /* ---------------------------------------------------------------------------
+     8️⃣ PR CONSULTANCY — Re-written Content
+  --------------------------------------------------------------------------- */
+  {
+    title: "PR Consultancy",
+    delay: 300,
+    icon: "fas fa-home",
+    bgColor: "linear-gradient(135deg, var(--secondary-color), var(--secondary-dark))",
+    description:
+      "Permanent residency filing and documentation support for migration seekers.",
+    link: "service-detail.html",
+    popular: true,
+    view: {
+      slider: {
+        name: "PR Consultancy Services",
+        heading: "PR Consultancy & Support",
+        paragraph:
+          "Settle permanently abroad with full assistance for PR documentation and approvals.",
+      },
+      about: {
+        title: "Overview",
+        p1:
+          "We assist skilled applicants, families, and working professionals with Permanent Residency filing and documentation.",
+        p2:
+          "Our team helps with points calculation, document verification, and long-term settlement planning.",
+        image:
+          "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=500&fit=crop",
+        storiess: [
+          { icon: "fas fa-check-circle", heading: "PR Pathway Experts" },
+          { icon: "fas fa-clock", heading: "Transparent Process" },
+        ],
+      },
+      requirements: [
+        {
+          heading: "Eligibility Factors",
+          delay: 0,
+          paragraph: [
+            "Age and education criteria",
+            "Skilled work experience",
+            "Valid ECA & language test",
+            "Points-based eligibility score",
+          ],
+        },
+        {
+          heading: "Mandatory Documents",
+          delay: 100,
+          paragraph: [
+            "Police clearance",
+            "Medicals",
+            "Identity documents",
+            "Financial stability proof",
+          ],
+        },
+      ],
+      process: [
+        {
+          number: "1",
+          bgColor: "linear-gradient(135deg, #3B82F6, #2563EB)",
+          delay: 0,
+          heading: "Free Consultation",
+          p: "Initial PR profile review",
+        },
+        {
+          number: "2",
+          delay: 100,
+          bgColor: "linear-gradient(135deg, #10B981, #059669)",
+          heading: "Document Preparation",
+          p: "Submitting required papers",
+        },
+        {
+          number: "3",
+          delay: 200,
+          heading: "PR Application",
+          bgColor: "linear-gradient(135deg, #F59E0B, #D97706)",
+          p: "Filing and tracking PR status",
+        },
+      ],
+      documents: [
+        {
+          name: "Primary Documents",
+          aos: "fade-right",
+          colorVar: "var(--primary-color)",
+          icon: "fas fa-file-alt",
+          list: [
+            "Passport",
+            "Academic certificates",
+            "Work experience letters",
+            "Police and medical reports",
+          ],
+        },
+        {
+          name: "Financial Papers",
+          aos: "fade-left",
+          colorVar: "var(--secondary-color)",
+          icon: "fas fa-passport",
+          list: [
+            "Proof of funds",
+            "Bank statements",
+            "Tax records",
+          ],
+        },
+      ],
+      questions: [
+        {
+          heading: "How many points are required?",
+          open: false,
+          p:
+            "Points differ by country and change frequently. We help calculate accurate eligibility.",
+        },
+      ],
+    },
+  },
+]

@@ -1,0 +1,44 @@
+
+    <!-- HERO -->
+    <section
+        style="background: linear-gradient(135deg, rgba(0, 82, 204, 0.9), rgba(255, 111, 60, 0.9)), url('https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=1920&h=600&fit=crop'); background-size: cover; background-position: center; padding: 120px 0 80px; margin-top: 40px; text-align: center; color: white;">
+        <div class="container">
+            <h1 style="font-size: 3rem; margin-bottom: 1rem; color: white;" data-aos="fade-down">Countries We Serve</h1>
+            <p style="font-size: 1.25rem; color: rgba(255,255,255,0.95);" data-aos="fade-up" data-aos-delay="100">
+                Discover immigration opportunities worldwide</p>
+        </div>
+    </section>
+
+    <!-- COUNTRIES GRID -->
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                   @for (item of countries ; track $index){
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-3 mb-2 mb-sm-4">
+                            <a (click)="viewDetails($index)" class="card hover-lift cursor-pointer" data-aos="fade-up" [attr.data-aos-delay]="item.delay"
+                            style="text-decoration: none; color: inherit;">
+                            <div style="text-align: center; font-size: 4rem; margin-bottom: var(--spacing-md);"> {{ item.emoji }}</div>
+                            <h3 class="card-title text-center">{{ item.title }}</h3>
+                            <p class="card-text">{{ item.description }}</p>
+                            <span
+                                style="color: var(--primary-color); font-weight: 600; margin-top: auto; display: inline-block; text-align: center; width: 100%;">
+                               {{ item.cta }} <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                    }
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section"
+        style="background: linear-gradient(135deg, var(--primary-color), var(--primary-dark)); color: white; text-align: center;">
+        <div class="container">
+            <h2 style="color: white; font-size: 2.5rem; margin-bottom: var(--spacing-md);">Not Sure Which Country?</h2>
+            <p style="font-size: var(--fs-h5); color: rgba(255,255,255,0.95); margin-bottom: var(--spacing-xl);">Take
+                our free assessment to find the best fit for your profile</p>
+            <a (click)="openPage(link.contact)" class="btn btn-secondary" style="margin-right: var(--spacing-md);">Book Consultation</a>
+        </div>
+    </section>

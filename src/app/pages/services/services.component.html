@@ -1,0 +1,60 @@
+  <!-- HERO BANNER -->
+    <section
+        style="background: linear-gradient(135deg, rgba(0, 82, 204, 0.9), rgba(255, 111, 60, 0.9)), url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1920&h=600&fit=crop'); background-size: cover; background-position: center; padding: 120px 0 80px; margin-top: 40px; text-align: center; color: white;">
+        <div class="container">
+            <h1 style="font-size: 3rem; margin-bottom: 1rem; color: white;" data-aos="fade-down">Our Services</h1>
+            <p style="font-size: 1.25rem; color: rgba(255,255,255,0.95);" data-aos="fade-up" data-aos-delay="100">
+                Comprehensive Immigration Solutions for Your Global Journey</p>
+        </div>
+    </section>
+
+    <!-- SERVICES GRID -->
+    <section class="section">
+        <div class="container">
+            <app-service [popular]="false" />
+        </div>
+    </section>
+
+    <!-- WHY OUR SERVICES STAND OUT -->
+    <section class="section" style="background: var(--light-bg);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Our Services Stand Out</h2>
+                <p class="section-subtitle">What makes Ar Immigration your best choice</p>
+            </div>
+            <div class="row">
+                @for (f of features; track $index){
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class="text-center" data-aos="zoom-in" [attr.data-aos-delay]="f.delay">
+                            <div class="d-flex justify-content-center">
+                                 <div class="rounded-circle d-flex justify-content-center align-items-center" [style.width]="f.boxSize"
+                                    [style.height]="f.boxSize"
+                                    [style.background]="f.bgColor">
+                                    <i [class]="f.icon" [style.font-size]="f.iconSize" style="color: white;"></i>
+                                </div>
+                            </div>
+                            <h3 style="margin-bottom: var(--spacing-sm);">{{ f.title }}</h3>
+                            <p style="color: var(--gray-text);">{{ f.description }}</p>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="section"
+        style="background: linear-gradient(135deg, var(--primary-color), var(--primary-dark)); color: white; text-align: center;">
+        <div class="container">
+            <h2 style="color: white; font-size: 2.5rem; margin-bottom: var(--spacing-md);" data-aos="fade-up">
+                Ready to Start Your Immigration Journey?
+            </h2>
+            <p style="font-size: var(--fs-h5); color: rgba(255,255,255,0.95); margin-bottom: var(--spacing-xl); max-width: 700px; margin-left: auto; margin-right: auto;"
+                data-aos="fade-up" data-aos-delay="100">
+                Book a free consultation with our experts and take the first step towards your global dreams.
+            </p>
+            <div data-aos="fade-up" data-aos-delay="200">
+                <a (click)="openPage(link.contact)" class="btn btn-secondary" style="margin-right: var(--spacing-md);">Book Consultation</a>
+            </div>
+        </div>
+    </section>

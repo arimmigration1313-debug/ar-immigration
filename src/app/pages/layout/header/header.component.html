@@ -1,0 +1,33 @@
+ <nav class="navbar">
+        <div class="container">
+            <div class="col-2">
+                <a [routerLink]="home" style="width: 60px;" class="navbar-logo">
+                     <img class="wp-70" src="assets/images/logo.png" alt="" />
+                </a>
+            </div>
+            <div class="col-10">
+                <div class="w-100 d-flex justify-content-end align-items-center">
+                    <div class="navbar-menu" [ngClass]="{'active':activeClass}">
+                        @for (todo of menuList; track todo; let i = $index, let e = $even) {
+                        <a (click)="activeClass = false"
+                            [routerLink]="todo.link" 
+                            routerLinkActive="active" 
+                            [routerLinkActiveOptions]="{ exact: true }"
+                            [class]="todo.class"
+                        >
+                            {{ todo.label }}
+                        </a>
+                        }
+                    </div>
+                    <button class="theme-toggle" (click)="themeChanged()">
+                        <i class="fas" [ngClass]="{'fa-moon':mode === 'light','fa-sun':mode === 'dark'}"></i>
+                    </button>
+                    <button class="navbar-toggle ms-2" (click)="activeClass = !activeClass" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>

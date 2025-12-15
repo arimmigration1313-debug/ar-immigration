@@ -1,0 +1,117 @@
+ <div class="row">
+     @for (todo of services; track $index){
+            <div class="col-12 col-sm-6 col-md-4 mb-sm-4 mb-2">
+                <div class="w-100">
+                    <a class="card hover-lift" data-aos="fade-up" [attr.data-aos-delay]="todo.delay"
+                        style="text-decoration: none; color: inherit;">
+                        <div class="card-icon" [style.background]="todo.bgColor">
+                            <i class="fas fa-flag"></i>
+                        </div>
+                        <h3 class="card-title">{{todo.title}}</h3>
+                        <p class="card-text">{{todo.description}}</p>
+                        <span style="color: var(--primary-color); font-weight: 600; margin-top: auto; display: inline-block;">
+                            Learn More <i class="fas fa-arrow-right" style="font-size: 14px;"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+      }
+
+    <!-- <div class="col-12 col-sm-6 col-md-4 mb-sm-4 mb-2">
+        <div class="w-100">
+            <a href="service-detail.html" class="card hover-lift" data-aos="fade-up" data-aos-delay="0"
+                style="text-decoration: none; color: inherit;">
+                <div class="card-icon" style="background: linear-gradient(135deg, #FF0000, #CC0000);">
+                    <i class="fas fa-flag"></i>
+                </div>
+                <h3 class="card-title">Canada PR</h3>
+                <p class="card-text">Express Entry, Provincial Nominee Programs, and family sponsorship options for
+                    Canadian Permanent Residence.</p>
+                <span style="color: var(--primary-color); font-weight: 600; margin-top: auto; display: inline-block;">
+                    Learn More <i class="fas fa-arrow-right" style="font-size: 14px;"></i>
+                </span>
+            </a>
+        </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 mb-sm-4 mb-2">
+        <div class="w-100">
+            <a href="service-detail.html" class="card hover-lift" data-aos="fade-up" data-aos-delay="100"
+                style="text-decoration: none; color: inherit;">
+                <div class="card-icon" style="background: linear-gradient(135deg, #0052CC, #003D99);">
+                    <i class="fas fa-plane-departure"></i>
+                </div>
+                <h3 class="card-title">Australia PR</h3>
+                <p class="card-text">Skilled migration pathways including points-based system and employer
+                    sponsorship for Australian residency.</p>
+                <span style="color: var(--primary-color); font-weight: 600; margin-top: auto; display: inline-block;">
+                    Learn More <i class="fas fa-arrow-right" style="font-size: 14px;"></i>
+                </span>
+            </a>
+        </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 mb-sm-4 mb-2">
+        <div class="w-100">
+            <a href="service-detail.html" class="card hover-lift" data-aos="fade-up" data-aos-delay="200"
+                style="text-decoration: none; color: inherit;">
+                <div class="card-icon" style="background: linear-gradient(135deg, #C8102E, #8B0A1F);">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <h3 class="card-title">UK Skilled Visa</h3>
+                <p class="card-text">Tier 2 Work Visa, Global Talent Visa, and other skilled worker routes to live
+                    and work in the UK.</p>
+                <span style="color: var(--primary-color); font-weight: 600; margin-top: auto; display: inline-block;">
+                    Learn More <i class="fas fa-arrow-right" style="font-size: 14px;"></i>
+                </span>
+            </a>
+        </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 mb-sm-4 mb-2">
+        <div class="w-100">
+            <a href="service-detail.html" class="card hover-lift" data-aos="fade-up" data-aos-delay="0"
+                style="text-decoration: none; color: inherit;">
+                <div class="card-icon" style="background: linear-gradient(135deg, #B22234, #7C1629);">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3 class="card-title">USA Student Visa</h3>
+                <p class="card-text">F-1 Student Visa assistance for undergraduate, graduate, and professional
+                    programs in the United States.</p>
+                <span style="color: var(--primary-color); font-weight: 600; margin-top: auto; display: inline-block;">
+                    Learn More <i class="fas fa-arrow-right" style="font-size: 14px;"></i>
+                </span>
+            </a>
+        </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 mb-sm-4 mb-2">
+        <div class="w-100">
+            <a href="service-detail.html" class="card hover-lift" data-aos="fade-up" data-aos-delay="100"
+                style="text-decoration: none; color: inherit;">
+                <div class="card-icon" style="background: linear-gradient(135deg, #003399, #002266);">
+                    <i class="fas fa-passport"></i>
+                </div>
+                <h3 class="card-title">Schengen Tourist Visa</h3>
+                <p class="card-text">Visit 26 European countries with a single visa. Tourism, business, and family
+                    visit applications.</p>
+                <span style="color: var(--primary-color); font-weight: 600; margin-top: auto; display: inline-block;">
+                    Learn More <i class="fas fa-arrow-right" style="font-size: 14px;"></i>
+                </span>
+            </a>
+        </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 mb-sm-4 mb-2">
+        <div class="w-100">
+            <a href="service-detail.html" class="card hover-lift" data-aos="fade-up" data-aos-delay="200"
+                style="text-decoration: none; color: inherit;">
+                <div class="card-icon"
+                    style="background: linear-gradient(135deg, var(--secondary-color), var(--secondary-dark));">
+                    <i class="fas fa-suitcase"></i>
+                </div>
+                <h3 class="card-title">Work Visa Programs</h3>
+                <p class="card-text">Employment-based visas for various countries including job search assistance
+                    and employer connections.</p>
+                <span style="color: var(--primary-color); font-weight: 600; margin-top: auto; display: inline-block;">
+                    Learn More <i class="fas fa-arrow-right" style="font-size: 14px;"></i>
+                </span>
+            </a>
+        </div>
+    </div> -->
+</div>

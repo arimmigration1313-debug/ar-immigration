@@ -1,0 +1,192 @@
+@if(view){
+
+<!-- HERO -->
+<section
+    style="background: linear-gradient(135deg, rgba(255, 0, 0, 0.8), rgba(204, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1517935706615-2717063c2225w=1920&h=600&fit=crop'); background-size: cover; background-position: center; padding: 120px 0 80px; margin-top: 40px; text-align: center; color: white;">
+    <div class="container">
+        <div style="font-size: 5rem; margin-bottom: var(--spacing-md);">{{view.slider.name}}</div>
+        <h1 style="font-size: 3rem; margin-bottom: 1rem; color: white;" data-aos="fade-down">{{view.slider.heading}}
+        </h1>
+        <p style="font-size: 1.25rem; color: rgba(255,255,255,0.95);" data-aos="fade-up" data-aos-delay="100">{{view.slider.paragraph}}</p>
+    </div>
+</section>
+
+<!-- IMMIGRATION PATHWAYS -->
+@if(view.visaPrograms && view.visaPrograms.length) {
+    <section class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Immigration Pathways</h2>
+                    <p class="section-subtitle">Multiple routes to Canadian Permanent Residence</p>
+                </div>
+                    <div class="row">
+                        @for (item of view.visaPrograms; track $index; let i = $index){
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                    <div class="card" data-aos="fade-up" [attr.data-aos-delay]="item.delay">
+                                    <h3 class="card-title">{{item.title}}</h3>
+                                    <p class="card-text">{{item.description}}</p>
+                                    @if(item.points && item.points.length) {
+                                     <ul style="list-style: none; padding: 0; margin-top: var(--spacing-md);">
+                                        @for (p of item.points; track $index; let i = $index){
+                                        <li style="padding: 4px 0;"><i [class]="p.icon"
+                                            [style.color]="p.color"
+                                            style="margin-right: 8px;"></i>{{ p.text }}</li>
+                                        }
+                                        </ul>
+                                    }
+                                </div>
+                            </div>
+                        }
+                    </div>
+            </div>
+    </section>
+}
+
+<!-- JOB OPPORTUNITIES -->
+@if(view.opportunities){
+    <section class="section" style="background: var(--light-bg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6">
+                        <div data-aos="fade-right">
+                        <h2>{{view.opportunities.heading}}</h2>
+                        <p>{{view.opportunities.p}}</p>
+                            @if(view.opportunities.jobCategories && view.opportunities.jobCategories.length) {
+                                <ul style="list-style: none; padding: 0; margin-top: var(--spacing-md);">
+                                    @for (item of view.opportunities.jobCategories; track $index; let i = $index){
+                                    <li style="padding: 8px 0; display: flex; align-items: start;">
+                                        <i  [class]="item.icon"
+                                            [style.color]="item.color"
+                                            style="margin-right: 12px; margin-top: 4px;"></i>
+                                        <div>
+                                            <strong>{{ item.title }}:</strong> {{ item.text }}
+                                        </div>
+                                    </li>
+                                    }
+                                </ul>
+                            }
+                        </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6">
+                        <div>
+                            <img [src]="view.opportunities.image"
+                                alt="Jobs in Canada" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-xl);">
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+}
+  
+
+
+  <!-- EDUCATION OPTIONS -->
+   @if(view.education){
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Education in Canada</h2>
+                <p class="section-subtitle">World-class universities and colleges</p>
+            </div>
+              @if(view.education.studyBenefits && view.education.studyBenefits.length) {
+                 <div class="row">
+                     @for (item of view.education.studyBenefits; track $index; let i = $index){
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                            <div class="text-center" data-aos="zoom-in" [attr.data-aos-delay]="item.delay">
+                                <div style="font-size: 3rem; margin-bottom: var(--spacing-sm);"> {{ item.emoji }}</div>
+                                <h4>{{ item.title }}</h4>
+                                <p style="color: var(--gray-text);"> {{ item.text }}</p>
+                            </div>
+                    </div>
+                    }
+                </div>
+              }
+        </div>
+    </section>
+}
+
+
+
+
+    <!-- VISA CATEGORIES -->
+     @if(view.visaTabs && view.visaTabs.length) {
+            <section class="section" style="background: var(--light-bg);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Visa Categories</h2>
+            </div>
+            <div class="tabs">
+                <div class="row">
+                    <div class="col-12">
+                        @for (tab of view.visaTabs; track $index) {
+                        <button class="tab" (click)="changedTab(tab.id)" [ngClass]="{'active':tab.active}">{{tab.label}}</button>
+                        }
+                    </div>
+                </div>
+            </div>
+          
+            @for (tab of view.visaTabs; track $index){
+                @if(tab.active){
+                    <div class="tab-content" [ngClass]="{'active':tab.active}">
+                        <div class="row">
+                            @for (val of tab.items; track $index){
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                                        <div class="card">
+                                            <h4>{{val.title}}</h4>
+                                            <p style="color: var(--gray-text);">{{val.text}}</p>
+                                        </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                }
+            }
+            </div>
+    </section>
+     }
+
+
+      <!-- DOCUMENT CHECKLIST -->
+       @if(view.documentsList && view.documentsList.length){
+           <section class="section">
+               <div class="container">
+                   <div class="section-title">
+                       <h2>Document Checklist</h2>
+                   </div>
+                   <div class="row d-flex justify-content-center">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                            <div style="max-width: 800px; margin: 0 auto; background: white; padding: var(--spacing-xl); border-radius: var(--radius-lg); box-shadow: var(--shadow-xl);">
+                                <div class="row">
+                                    @for(item of view.documentsList; track $index){
+                                    <div class="col-12 col-sm-12 col-md-6">
+                                            <h4 style="margin-bottom: var(--spacing-md);">{{item.title}}</h4>
+                                            @if(item.items && item.items.length){
+                                                <ul style="list-style: none; padding: 0;">
+                                                         @for(p of item.items; track $index){
+                                                            <li style="padding: 8px 0;"><i class="fa-check fas"   style="margin-right: 8px; color: var(--secondary-color);"></i>{{p}}</li>
+                                                         }
+                                            </ul>
+                                            }
+                                            
+                                    </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+               </div>
+           </section>
+       }
+
+     <!-- CTA -->
+    <section class="section"
+        style="background: linear-gradient(135deg, #FF0000, #CC0000); color: white; text-align: center;">
+        <div class="container">
+            <h2 style="color: white; font-size: 2.5rem; margin-bottom: var(--spacing-md);">Ready to Move to Canada</h2>
+            <p style="font-size: var(--fs-h5); color: rgba(255,255,255,0.95); margin-bottom: var(--spacing-xl);">Start
+                your Canadian immigration journey today</p>
+            <a (click)="contactPage()" class="btn btn-white">Apply Now</a>
+        </div>
+    </section>
+
+    }

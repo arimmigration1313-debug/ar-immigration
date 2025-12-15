@@ -1,0 +1,204 @@
+@if(viewDetails){
+
+
+
+<section
+    style="background: linear-gradient(135deg, rgba(0, 82, 204, 0.9), rgba(255, 111, 60, 0.9)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1w=1920&h=600&fit=crop'); background-size: cover; background-position: center; padding: 120px 0 80px; margin-top: 40px; text-align: center; color: white;">
+    <div class="container">
+        <div
+            style="display: inline-flex; align-items: center; background: rgba(255,255,255,0.2); padding: 8px 20px; border-radius: var(--radius-full); margin-bottom: var(--spacing-md);">
+            <i class="fas fa-graduation-cap" style="margin-right: 8px;"></i>
+            <span>{{viewDetails.slider.name}}</span>
+        </div>
+        <h1 style="font-size: 3rem; margin-bottom: 1rem; color: white;" data-aos="fade-down">{{viewDetails.slider.heading}}
+        </h1>
+        <p style="font-size: 1.25rem; color: rgba(255,255,255,0.95); max-width: 700px; margin: 0 auto;"
+            data-aos="fade-up" data-aos-delay="100">{{viewDetails.slider.paragraph}}</p>
+    </div>
+</section>
+
+
+   <!-- OVERVIEW -->
+<section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6">
+                    <div data-aos="fade-right">
+                    <img [src]="viewDetails.about.image"
+                        alt="Study Abroad" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-xl);">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6">
+                           <div>
+                            <h2>{{viewDetails.about.title}}</h2>
+                            <p>{{viewDetails.about.p1}}</p>
+                            <p>{{viewDetails.about.p2}}</p>
+                                <div
+                                style="background: var(--light-bg); padding: var(--spacing-md); border-radius: var(--radius-md); margin-top: var(--spacing-lg);">
+                                 @for (item of viewDetails.about.storiess; track $index){
+                                <h4 style="margin-bottom: var(--spacing-sm);"><i [class]="item.icon"
+                                        style="color: var(--secondary-color);"></i> {{item.heading}}</h4>
+                                    }
+                                </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+
+<!-- ELIGIBILITY -->
+@if(viewDetails.requirements && viewDetails.requirements.length) {
+    <section class="section" style="background: var(--light-bg);">
+    <div class="container">
+        <div class="section-title">
+            <h2>Eligibility Requirements</h2>
+        </div>
+        <div class="row">
+             @for (item of viewDetails.requirements; track $index; let i = $index) {
+            <div class="col-12 col-sm-12 col-md-6 mb-2 mb-sm-4">
+                <div class="card" data-aos="fade-up" [attr.data-aos-delay]="item.delay">
+                <h3 class="card-title">{{item.heading}}</h3>
+                <ul style="list-style: none; padding: 0;">
+                    @if(item.paragraph && item.paragraph.length) {
+                          @for (p of item.paragraph; track $index; let j = $index) {
+                            <li style="padding: 8px 0; display: flex; align-items: start;">
+                                <i class="fas fa-check"
+                                    style="color: var(--secondary-color); margin-right: 12px; margin-top: 4px;"></i>
+                                <span>{{p}}</span>
+                            </li>
+                          }
+                    }
+                </ul>
+                </div>
+            </div>
+        }
+        </div>
+        <!-- <div class="grid grid-2">
+            @for (item of viewDetails.requirements; track $index; let i = $index) {
+                 <div class="card" data-aos="fade-up" [attr.data-aos-delay]="item.delay">
+                <h3 class="card-title">{{item.heading}}</h3>
+                <ul style="list-style: none; padding: 0;">
+                    @if(item.paragraph && item.paragraph.length) {
+                          @for (p of item.paragraph; track $index; let j = $index) {
+                            <li style="padding: 8px 0; display: flex; align-items: start;">
+                                <i class="fas fa-check"
+                                    style="color: var(--secondary-color); margin-right: 12px; margin-top: 4px;"></i>
+                                <span>{{p}}</span>
+                            </li>
+                          }
+                    }
+                </ul>
+            </div>
+            }
+        </div> -->
+    </div>
+</section>
+}
+
+
+
+<!-- PROCESS STEPS -->
+ @if(viewDetails.process && viewDetails.process.length) {
+    <section class="section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Process</h2>
+            <p class="section-subtitle">Step-by-step guidance to study abroad</p>
+        </div>
+        <div class="row">
+            @for (item of viewDetails.process; track $index; let i = $index) {
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-2 mb-sm-4">
+                     <div class="card text-center" data-aos="fade-up" [attr.data-aos-delay]="item.delay">
+                    <div [style.background]="item.bgColor"
+                        style="width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--spacing-md); font-size: 24px; font-weight: bold; color: white;">
+                        {{item.number}}</div>
+                    <h4>{{item.heading}}</h4>
+                    <p style="color: var(--gray-text); margin: 0;">{{item.p}}</p>
+                </div>
+                </div>
+            }
+
+        </div>
+    </div>
+</section>
+ }
+
+
+ 
+    <!-- REQUIRED DOCUMENTS -->
+@if(viewDetails.documents && viewDetails.documents.length) {
+    <section class="section" style="background: var(--light-bg);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Required Documents</h2>
+            </div>
+
+        <div class="row">
+            @for (item of viewDetails.documents; track $index; let i = $index) {
+                <div class="col-12 col-sm-12 col-md-6 mb-2 mb-sm-4">
+                     <div data-aos="fade-right" [attr.data-aos]="item.aos">
+                    <h3 style="margin-bottom: var(--spacing-md);">{{item.name}}</h3>
+                    <div
+                        style="background: white; padding: var(--spacing-lg); border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+                        @if(item.list && item.list.length) {
+                            <ul style="list-style: none; padding: 0; margin: 0;">
+                                 @for (p of item.list; track $index; let j = $index) {
+                                    <li style="padding: 10px 0; border-bottom: 1px solid var(--gray-light);"><i
+                                            [class]="item.icon"
+                                            style="margin-right: 10px;"
+                                            [style.color]="item.colorVar"></i> {{p}}
+                                    </li>
+                                 }
+                            </ul>
+                        }
+                          
+                        </div>
+                    </div>
+                </div>
+            }
+            </div>
+        </div>
+    </section>
+}
+
+  <!-- FAQ SECTION -->
+    @if(viewDetails.questions && viewDetails.questions.length) {
+        <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                        @for(item of viewDetails.questions; track $index; let i = $index) {
+                        <div class="accordion-item" [class.active]="item.open">
+                            <div class="accordion-header">
+                                <span>{{item.heading}}</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-body">
+                                <p>{{item.p}}</p>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+            </div>
+    </section>
+    }
+   
+
+
+    <!-- CTA SECTION -->
+    <section class="section"
+        style="background: linear-gradient(135deg, var(--primary-color), var(--primary-dark)); color: white; text-align: center;">
+        <div class="container">
+            <h2 style="color: white; font-size: 2.5rem; margin-bottom: var(--spacing-md);">Ready to Apply</h2>
+            <p style="font-size: var(--fs-h5); color: rgba(255,255,255,0.95); margin-bottom: var(--spacing-xl);">Start
+                your study abroad journey today</p>
+            <a (click)="contactPage()" class="btn btn-secondary cursor-pointer">Apply Now</a>
+        </div>
+    </section>
+
+}

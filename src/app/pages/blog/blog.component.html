@@ -1,0 +1,43 @@
+
+    <!-- HERO -->
+    <section
+        style="background: linear-gradient(135deg, rgba(0, 82, 204, 0.9), rgba(255, 111, 60, 0.9)), url('https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1920&h=600&fit=crop'); background-size: cover; background-position: center; padding: 120px 0 80px; margin-top: 40px; text-align: center; color: white;">
+        <div class="container">
+            <h1 style="font-size: 3rem; margin-bottom: 1rem; color: white;" data-aos="fade-down">Immigration Blog</h1>
+            <p style="font-size: 1.25rem; color: rgba(255,255,255,0.95);" data-aos="fade-up" data-aos-delay="100">News,
+                guides, and tips for your immigration journey</p>
+        </div>
+    </section>
+
+    <!-- SEARCH & FILTER -->
+    <section class="section" style="padding-top: var(--spacing-xl);">
+        <div class="container">
+            <div class="row">
+                @for (item of blogs; track $index){
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-2 mb-sm-4">
+                         <a (click)="viewDetails($index)" class="card hover-lift cursor-pointer" data-aos="fade-up"
+                            [attr.data-aos-delay]="item.delay"
+                            style="text-decoration: none; color: inherit; padding: 0; overflow: hidden;">
+                            <img [src]="item.image"
+                                alt="{{ item.title }}" style="width: 100%; height: 200px; object-fit: cover;">
+                            <div style="padding: var(--spacing-lg);">
+                                <div
+                                    style="display: flex; gap: var(--spacing-sm); margin-bottom: var(--spacing-sm); flex-wrap: wrap;">
+                                    <span
+                                     [style.background]="item.categoryColor"
+                                        style=" color: white; padding: 4px 12px; border-radius: var(--radius-full); font-size: var(--fs-tiny);">{{ item.category }}</span>
+                                    <span style="color: var(--gray-medium); font-size: var(--fs-small);"><i
+                                            class="far fa-calendar"></i> {{ item.date }}</span>
+                                </div>
+                                <h3 style="font-size: var(--fs-h4); margin-bottom: var(--spacing-sm);">{{ item.title }}</h3>
+                                <p style="color: var(--gray-text); margin-bottom: var(--spacing-md);"> {{ item.description }}</p>
+                                <span style="color: var(--primary-color); font-weight: 600;">
+                                    Read More <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                </div>
+             }   
+            </div>
+        </div>
+    </section>

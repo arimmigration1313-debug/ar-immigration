@@ -1,0 +1,146 @@
+
+    <!-- HERO BANNER -->
+    <section
+        style="background: linear-gradient(135deg, rgba(0, 82, 204, 0.9), rgba(255, 111, 60, 0.9)), url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1920&h=600&fit=crop'); background-size: cover; background-position: center; padding: 120px 0 80px; margin-top: 40px; text-align: center; color: white;">
+        <div class="container">
+            <h1 style="font-size: 3rem; margin-bottom: 1rem; color: white;" data-aos="fade-down">About Ar Immigration</h1>
+            <p style="font-size: 1.25rem; color: rgba(255,255,255,0.95);" data-aos="fade-up" data-aos-delay="100">Your
+                Trusted Partner in Immigration Services</p>
+        </div>
+    </section>
+    <!-- COMPANY PROFILE -->
+    <section class="section">
+        <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                        <div data-aos="fade-right">
+                            <img class="img-fluid" src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=500&fit=crop"
+                                alt="Our Team" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-xl);">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                        <div>
+                            <h2>Who We Are</h2>
+                            <p>Ar Immigration is a leading immigration consultancy firm with over 10 years of experience helping
+                                individuals and families achieve their dreams of living, working, and studying abroad.</p>
+                            <p>Founded by a team of certified immigration consultants and lawyers, we have built a reputation
+                                for excellence, integrity, and results. Our success is measured by the thousands of clients who
+                                have successfully immigrated to their destination countries with our guidance.</p>
+                            <p>We stay current with ever-changing immigration policies and regulations, ensuring our clients
+                                receive accurate, up-to-date advice tailored to their unique circumstances.</p>
+                            <div style="margin-top: var(--spacing-lg);">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div
+                                        style="background: var(--light-bg); padding: var(--spacing-md); border-radius: var(--radius-md);">
+                                        <h3 style="color: var(--secondary-color); font-size: 2rem; margin-bottom: 0.5rem;">10+</h3>
+                                        <p style="margin: 0; color: var(--gray-text);">Years Experience</p>
+                                    </div>
+                                    </div>
+                                    <div class="col-6">
+                                            <div
+                                            style="background: var(--light-bg); padding: var(--spacing-md); border-radius: var(--radius-md);">
+                                            <h3 style="color: var(--secondary-color); font-size: 2rem; margin-bottom: 0.5rem;">5000+
+                                            </h3>
+                                            <p style="margin: 0; color: var(--gray-text);">Successful Cases</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- MISSION, VISION & VALUES -->
+    <section class="section" style="background: var(--light-bg);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Mission, Vision & Values</h2>
+            </div>
+
+          
+            <div class="row">
+                  @for (todo of missions; track $index){
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-2 mb-sm-4">
+                        <div class="card" data-aos="zoom-in" [attr.data-aos-delay]="todo.delay">
+                        <div class="card-icon"
+                            [style.background]="todo.bgColor">
+                            <i [class]="todo.icon"></i>
+                        </div>
+                        <h3 class="card-title">{{ todo.title }}</h3>
+                        <p class="card-text"> {{ todo.description }}</p>
+                            </div>
+                    </div>
+                  }
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM SECTION -->
+    <!-- <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Meet Our Expert Team</h2>
+                <p class="section-subtitle">Certified immigration consultants dedicated to your success</p>
+            </div>
+            <div class="row">
+                 @for (todo of teamMembers; track $index){
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2 mb-sm-4">
+                        <div class="text-center" data-aos="fade-up"  [attr.data-aos-delay]="todo.delay">
+                            <img [src]="todo.img" alt="{{todo.name}}"
+                                style="width: 150px; height: 150px; border-radius: 50%; margin: 0 auto var(--spacing-md); border: 4px solid var(--primary-color);">
+                            <h4>{{ todo.name }}</h4>
+                            <p style="color: var(--secondary-color); font-weight: 600; margin-bottom: 0.5rem;">{{ todo.role }}</p>
+                            <p style="font-size: var(--fs-small); color: var(--gray-text);">{{ todo.description }}
+                            </p>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </section> -->
+
+    <!-- EXPERIENCE HIGHLIGHT -->
+    <section class="section"
+        style="background: linear-gradient(135deg, var(--primary-color), var(--primary-dark)); color: white; text-align: center;">
+        <div class="container">
+            <div data-aos="zoom-in">
+                <h2 style="font-size: 3rem; margin-bottom: var(--spacing-md); color: white;">
+                    <i class="fas fa-award" style="color: var(--secondary-color);"></i>
+                </h2>
+                <h3 style="font-size: 2.5rem; margin-bottom: var(--spacing-sm); color: white;">10+ Years of Excellence
+                </h3>
+                <p style="font-size: var(--fs-h5); color: rgba(255,255,255,0.95); max-width: 800px; margin: 0 auto;">
+                    Over a decade of helping individuals and families achieve their immigration goals. Our track record
+                    speaks for itself - thousands of successful cases across multiple countries.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS & PARTNERSHIPS -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Certifications & Partnerships</h2>
+                <p class="section-subtitle">Accredited and recognized by leading immigration authorities</p>
+            </div>
+            <div class="row">
+                 @for (item of accreditations; track $index){
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="text-center" data-aos="fade-up" [attr.data-aos-delay]="item.delay">
+                        <div
+                            style="background: var(--light-bg); padding: var(--spacing-lg); border-radius: var(--radius-lg); height: 100%;">
+                            <i class="fas fa-certificate"
+                                style="font-size: 3rem; margin-bottom: var(--spacing-md);" [style.color]="item.color"></i>
+                            <h4>{{ item.title }}</h4>
+                            <p style="color: var(--gray-text); margin: 0;">{{ item.description }}</p>
+                        </div>
+                    </div>
+                </div>
+                 }
+            </div>
+        </div>
+    </section>

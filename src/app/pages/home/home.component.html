@@ -1,0 +1,324 @@
+<!-- ========== HERO SLIDER ========== -->
+<section class="hero-slider">
+    <!-- Slide 1 -->
+
+     @for (slide of homeSlides; track $index; let i = $index) {
+        <div class="hero-slide" [class.active]="i === 0" [style.background-image]="'url(' + slide.bg + ')'">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">{{ slide.title }}</h1>
+                <p class="hero-subtitle">{{ slide.subtitle }}</p>
+                <div class="hero-buttons">
+                     @for (btn of slide.buttons; track $index) {
+                         <a (click)="openPage(btn.link)" [class]="btn.class">{{ btn.text }}</a>
+                     }
+                </div>
+            </div>
+        </div>
+     }
+
+    <!-- Slider Controls -->
+    <button class="slider-arrow prev" aria-label="Previous slide">
+        <i class="fas fa-chevron-left"></i>
+    </button>
+    <button class="slider-arrow next" aria-label="Next slide">
+        <i class="fas fa-chevron-right"></i>
+    </button>
+    <div class="slider-controls">
+         @for (dot of homeSlides; track $index; let i = $index) {
+             <span class="slider-dot" [class.active]="i === 0"></span>
+         }
+    </div>
+</section>
+
+<!-- ========== ABOUT US PREVIEW ========== -->
+<section class="section" style="background: var(--light-bg);">
+    <div class="container">
+        <div class="section-title">
+            <h2>About Ar Immigration</h2>
+            <p class="section-subtitle"> With over 10+ years of experience, we are your trusted partner in achieving
+                your immigration
+                dreams.</p>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 mb-2 mb-sm-4">
+                <div data-aos="fade-right">
+                    <img src="assets/images/about.jpeg" alt="Our Team"
+                        style="border-radius: var(--radius-lg); box-shadow: var(--shadow-xl);">
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 mb-2 mb-sm-4">
+                <!-- USPs -->
+                <div style="display: flex; flex-direction: column; gap: var(--spacing-md);" data-aos="fade-left">
+                    <div style="display: flex; gap: var(--spacing-md); align-items: start;">
+                        <div
+                            style="width: 50px; height: 50px; background: linear-gradient(135deg, var(--primary-color), var(--primary-light)); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            <i class="fas fa-check" style="color: white; font-size: 20px;"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin-bottom: 0.5rem;">99% Success Rate</h4>
+                            <p style="color: var(--gray-text); margin: 0;">Proven track record of successful visa
+                                applications</p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: var(--spacing-md); align-items: start;">
+                        <div
+                            style="width: 50px; height: 50px; background: linear-gradient(135deg, var(--secondary-color), var(--secondary-light)); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            <i class="fas fa-users" style="color: white; font-size: 20px;"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin-bottom: 0.5rem;">Expert Team</h4>
+                            <p style="color: var(--gray-text); margin: 0;">Certified immigration consultants and
+                                lawyers</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: var(--spacing-md); align-items: start;">
+                        <div
+                            style="width: 50px; height: 50px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            <i class="fas fa-headset" style="color: white; font-size: 20px;"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin-bottom: 0.5rem;">24/7 Support</h4>
+                            <p style="color: var(--gray-text); margin: 0;">Always available to assist you at every
+                                step</p>
+                        </div>
+                    </div>
+                    <a (click)="openPage(link.about)" class="btn btn-primary" style="margin-top: var(--spacing-lg);">Learn More About
+                        Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== POPULAR IMMIGRATION PROGRAMS ========== -->
+<section class="section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Popular services</h2>
+            <p class="section-subtitle">Explore our most sought-after visa and immigration services</p>
+        </div>
+        <app-service [popular]="true" />
+        <div style="text-align: center; margin-top: var(--spacing-xl);">
+            <a (click)="openPage(link.services)" class="btn btn-outline">View All Services</a>
+        </div>
+    </div>
+</section>
+
+<!-- ========== WHY CHOOSE US ========== -->
+<section class="section"
+    style="background: linear-gradient(135deg, var(--primary-color), var(--primary-dark)); color: white;">
+    <div class="container">
+        <div class="section-title">
+            <h2 style="color: white;">Why Choose Ar Immigration</h2>
+            <p class="section-subtitle" style="color: rgba(255,255,255,0.9);">
+                What makes us the preferred choice for immigration services
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="text-center" data-aos="zoom-in" data-aos-delay="0">
+                    <div
+                        style="width: 80px; height: 80px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--spacing-md);">
+                        <i class="fas fa-trophy" style="font-size: 36px; color: var(--secondary-color);"></i>
+                    </div>
+                    <h3 data-counter="5000" style="font-size: 2.5rem; margin-bottom: 0.5rem; color: white;">0</h3>
+                    <p style="color: rgba(255,255,255,0.9);">Successful Cases</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="text-center" data-aos="zoom-in" data-aos-delay="100">
+                    <div
+                        style="width: 80px; height: 80px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--spacing-md);">
+                        <i class="fas fa-globe" style="font-size: 36px; color: var(--secondary-color);"></i>
+                    </div>
+                    <h3 data-counter="30" style="font-size: 2.5rem; margin-bottom: 0.5rem; color: white;">0</h3>
+                    <p style="color: rgba(255,255,255,0.9);">Countries Covered</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="text-center" data-aos="zoom-in" data-aos-delay="200">
+                    <div
+                        style="width: 80px; height: 80px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--spacing-md);">
+                        <i class="fas fa-star" style="font-size: 36px; color: var(--secondary-color);"></i>
+                    </div>
+                    <h3 data-counter="99" style="font-size: 2.5rem; margin-bottom: 0.5rem; color: white;">0</h3>
+                    <p style="color: rgba(255,255,255,0.9);">Success Rate %</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="text-center" data-aos="zoom-in" data-aos-delay="300">
+                    <div
+                        style="width: 80px; height: 80px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--spacing-md);">
+                        <i class="fas fa-user-tie" style="font-size: 36px; color: var(--secondary-color);"></i>
+                    </div>
+                    <h3 data-counter="50" style="font-size: 2.5rem; margin-bottom: 0.5rem; color: white;">0</h3>
+                    <p style="color: rgba(255,255,255,0.9);">Expert Consultants</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Success Stories</h2>
+            <p class="section-subtitle">What our clients say about us</p>
+        </div>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                 @for (item of testimonials; track $index; let i = $index;) {
+                <button type="button" data-bs-target="#testimonialCarousel"   [attr.data-bs-slide-to]="i"
+                [class.active]="i === 0"></button>
+                 }
+            </div>
+            <!-- Slides -->
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                 @for (item of testimonials; track $index; let i = $index;) {
+                    <div class="carousel-item" [class.active]="i === 0">
+                            <div class="testimonial-card mx-auto  text-center">
+                                <div class="text-center d-flex justify-content-center">
+                                    <img class="testimonial-img" [src]="item.img" alt="User">
+                                </div>
+                                <p class="testimonial-text">
+                                   {{ item.text }}
+                                </p>
+                                <h5 class="testimonial-name">{{ item.name }}</h5>
+                                <p class="testimonial-role">{{ item.role }}</p>
+                            </div>
+                    </div>
+                 }
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ========== PROCESS TIMELINE ========== -->
+<section class="section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Simple Process</h2>
+            <p class="section-subtitle">Your journey to a new life in 5 easy steps</p>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="position-relative">
+                    <div
+                        style="position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; background: var(--gray-light); transform: translateX(-50%); z-index: 0;">
+                    </div>
+
+                     @for (step of steps; track $index) {
+                          <div data-aos="fade-right" class="section_service" [class.d-flex]="step.align === 'start'" [class.justify-content-end]="step.align === 'start'">
+                                <div class="content" [class.text-start]="step.align === 'start'" [class.text-end]="step.align === 'end'">
+                                    <h3 style="font-size: var(--fs-h4); margin-bottom: var(--spacing-sm);">
+                                        <span style="color: var(--secondary-color);">{{ step.number }}</span> {{ step.title }}
+                                    </h3>
+                                    <p style="color: var(--gray-text);">{{ step.text }}</p>
+                                </div>
+                                <div
+                                    style="position: absolute; left: 50%; top: 0; width: 50px; height: 50px; border-radius: 50%; transform: translateX(-50%); display: flex; align-items: center; justify-content: center; z-index: 1; box-shadow: var(--shadow-lg);"
+                                    [style.background]="step.bg">
+                                    <i [class]="step.icon" style="color: white; font-size: 20px;"></i>
+                                </div>
+                            </div>
+                     }
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- ========== FREE ASSESSMENT FORM ========== -->
+<section class="section" style="background: var(--light-bg);">
+    <div class="container">
+        <div class="section-title">
+            <h2>Get Your Free Assessment</h2>
+            <p class="section-subtitle">Check your eligibility in just 2 minutes</p>
+        </div>
+        <div class="row flex justify-content-center">
+            <div class="col-12 col-sm-12 col-lg-8">
+                <div style="margin: 0 auto; background: white; padding: var(--spacing-xl); border-radius: var(--radius-lg); box-shadow: var(--shadow-xl);"
+                    data-aos="zoom-in">
+                    <form id="quickAssessmentForm"  [formGroup]="form" (ngSubmit)="sendMessage()">
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <label class="form-label">Full Name *</label>
+                                    <input type="text" class="form-control" formControlName="name" [ngClass]="{'is-invalid': ((sub || fc['name'].touched) && fc['name'].errors)}" placeholder="Your name">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <label class="form-label">Email *</label>
+                                    <input type="email" class="form-control" formControlName="email" [ngClass]="{'is-invalid': ((sub || fc['email'].touched) && fc['email'].errors)}" placeholder="your@email.com">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <label class="form-label">Phone Number *</label>
+                                    <input type="tel" class="form-control"  formControlName="phone" [ngClass]="{'is-invalid': ((sub || fc['phone'].touched) && fc['phone'].errors)}"  placeholder="+1 234 567 8900">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <label class="form-label">Country of Interest *</label>
+                                    <select class="form-control"  formControlName="subject" [ngClass]="{'is-invalid': ((sub || fc['subject'].touched) && fc['subject'].errors)}">
+                                        <option value="">Select Country</option>
+                                        <option value="canada">Canada</option>
+                                        <option value="australia">Australia</option>
+                                        <option value="uk">United Kingdom</option>
+                                        <option value="usa">United States</option>
+                                        <option value="germany">Germany</option>
+                                        <option value="newzealand">New Zealand</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                             <div class="form-group">
+                                    <label class="form-label">Message *</label>
+                                    <textarea class="form-control" formControlName="message" [ngClass]="{'is-invalid': ((sub || fc['message'].touched) && fc['message'].errors)}" placeholder="Tell us about any query..."
+                                        ></textarea>
+                            </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary"
+                            style="width: 100%; margin-top: var(--spacing-md);" [disabled]="isLoading">
+                            <span 
+                                            class="spinner-border spinner-border-sm me-2" 
+                                            *ngIf="isLoading">
+                                        </span>
+
+                                        <!-- Normal Icon + Text -->
+                                        <span *ngIf="!isLoading">
+                                            <i class="fas fa-paper-plane me-2"></i> Send Message
+                                        </span>
+
+                                        <!-- Loading Text -->
+                                        <span *ngIf="isLoading">
+                                            Sending...
+                                        </span>
+                        </button>
+
+                        <p
+                            style="text-align: center; margin-top: var(--spacing-md); font-size: var(--fs-small); color: var(--gray-text);">
+                            <i class="fas fa-lock"></i> Your information is secure and confidential
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>

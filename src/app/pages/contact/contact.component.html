@@ -1,0 +1,183 @@
+   <!-- HERO -->
+    <section
+        style="background: linear-gradient(135deg, rgba(0, 82, 204, 0.9), rgba(255, 111, 60, 0.9)), url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1920&h=600&fit=crop'); background-size: cover; background-position: center; padding: 120px 0 80px; margin-top: 40px; text-align: center; color: white;">
+        <div class="container">
+            <h1 style="font-size: 3rem; margin-bottom: 1rem; color: white;" data-aos="fade-down">Contact Us</h1>
+            <p style="font-size: 1.25rem; color: rgba(255,255,255,0.95);" data-aos="fade-up" data-aos-delay="100">We're
+                here to help with your immigration journey</p>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM & INFO -->
+    <section class="section">
+        <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                          <!-- Contact Form -->
+                        <div data-aos="fade-right">
+                            <h2>Send Us a Message</h2>
+                            <p style="color: var(--gray-text); margin-bottom: var(--spacing-lg);">Fill out the form below and
+                                we'll get back to you within 24 hours.</p>
+
+                            <form id="contactForm" [formGroup]="form" (ngSubmit)="sendMessage()">
+                                <div class="form-group">
+                                    <label class="form-label">Full Name *</label>
+                                    <input type="text" class="form-control is-invalid"  formControlName="name" [ngClass]="{'is-invalid': ((sub || fc['name'].touched) && fc['name'].errors)}" placeholder="John Doe" >
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label">Email Address *</label>
+                                    <input type="email" class="form-control" formControlName="email" [ngClass]="{'is-invalid': ((sub || fc['email'].touched) && fc['email'].errors)}" placeholder="john@example.com" >
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label">Phone Number *</label>
+                                    <input type="tel" class="form-control" formControlName="phone" [ngClass]="{'is-invalid': ((sub || fc['phone'].touched) && fc['phone'].errors)}" placeholder="+1 234 567 8900" >
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label">Subject *</label>
+                                    <select class="form-control" formControlName="subject" [ngClass]="{'is-invalid': ((sub || fc['subject'].touched) && fc['subject'].errors)}">
+                                        <option value="">Select a subject</option>
+                                        <option value="general">General Inquiry</option>
+                                        <option value="study">Study Visa</option>
+                                        <option value="work">Work Visa</option>
+                                        <option value="pr">Permanent Residence</option>
+                                        <option value="visitor">Visitor Visa</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label">Message *</label>
+                                    <textarea class="form-control" formControlName="message" [ngClass]="{'is-invalid': ((sub || fc['message'].touched) && fc['message'].errors)}" placeholder="Tell us about any query..."
+                                        ></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary" style="width: 100%;" [disabled]="isLoading">
+                                        <span 
+                                            class="spinner-border spinner-border-sm me-2" 
+                                            *ngIf="isLoading">
+                                        </span>
+
+                                        <!-- Normal Icon + Text -->
+                                        <span *ngIf="!isLoading">
+                                            <i class="fas fa-paper-plane me-2"></i> Send Message
+                                        </span>
+
+                                        <!-- Loading Text -->
+                                        <span *ngIf="isLoading">
+                                            Sending...
+                                        </span>
+
+                                    <!-- <i class="fas fa-paper-plane" style="margin-right: 8px;"></i> Send Message -->
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                        <!-- Contact Information -->
+                        <div>
+                            <h2>Get In Touch</h2>
+                            <p style="color: var(--gray-text); margin-bottom: var(--spacing-lg);">Reach out to us through any of
+                                these channels.</p>
+
+                            <!-- Contact Cards -->
+                            <div style="display: flex; flex-direction: column; gap: var(--spacing-md);">
+                                <div
+                                    style="background: var(--light-bg); padding: var(--spacing-lg); border-radius: var(--radius-md); display: flex; align-items: start; gap: var(--spacing-md);">
+                                    <div
+                                        style="width: 50px; height: 50px; background: linear-gradient(135deg, var(--primary-color), var(--primary-light)); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                        <i class="fas fa-map-marker-alt" style="color: white; font-size: 20px;"></i>
+                                    </div>
+                                    <div>
+                                        <h4 style="margin-bottom: 0.5rem;">Office Address</h4>
+                                        <p style="color: var(--gray-text); margin: 0;">Piccadily Square Mall,First Floor</p>
+                                    </div>
+                                </div>
+
+                                <div
+                                    style="background: var(--light-bg); padding: var(--spacing-lg); border-radius: var(--radius-md); display: flex; align-items: start; gap: var(--spacing-md);">
+                                    <div
+                                        style="width: 50px; height: 50px; background: linear-gradient(135deg, var(--secondary-color), var(--secondary-dark)); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                        <i class="fas fa-phone" style="color: white; font-size: 20px;"></i>
+                                    </div>
+                                    <div>
+                                        <h4 style="margin-bottom: 0.5rem;">Phone</h4>
+                                        <p style="color: var(--gray-text); margin: 0;">Main: <a href="tel:+917303242789" target="_blank">+91 7303242789</a><br>WhatsApp: <a href="https://wa.me/7303242789" target="_blank">+91 7303242789</a></p>
+                                    </div>
+                                </div>
+
+                                <div
+                                    style="background: var(--light-bg); padding: var(--spacing-lg); border-radius: var(--radius-md); display: flex; align-items: start; gap: var(--spacing-md);">
+                                    <div
+                                        style="width: 50px; height: 50px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                        <i class="fas fa-envelope" style="color: white; font-size: 20px;"></i>
+                                    </div>
+                                    <div>
+                                        <h4 style="margin-bottom: 0.5rem;">Email</h4>
+                                        <p style="color: var(--gray-text); margin: 0;">General: <a href="mailto:arimmigration1313@gmail.com" target="_blank">{{'arimmigration1313@gmail.com'}}</a><br>
+                                            <!-- Support: {{'support@Ar Immigration.com'}}<br>Career: {{'careers@Ar Immigration.com'}}</p> -->
+                                    </div>
+                                </div>
+
+                                <div
+                                    style="background: var(--light-bg); padding: var(--spacing-lg); border-radius: var(--radius-md); display: flex; align-items: start; gap: var(--spacing-md);">
+                                    <div
+                                        style="width: 50px; height: 50px; background: linear-gradient(135deg, #10B981, #059669); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                        <i class="fas fa-clock" style="color: white; font-size: 20px;"></i>
+                                    </div>
+                                    <div>
+                                        <h4 style="margin-bottom: 0.5rem;">Working Hours</h4>
+                                        <p style="color: var(--gray-text); margin: 0;">Monday - Friday: 9:00 AM - 6:00
+                                            PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- MAP SECTION -->
+    <section style="background: var(--light-bg); padding: 0;">
+                <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3429.822995870522!2d76.76764639999999!3d30.7233761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fedb20ff59a0b%3A0xec16b07176f8c3ae!2sPiccadily%20Square%20Mall%2C%20Sector%2034A%2C%20Sector%2034%2C%20Chandigarh%2C%20160022!5e0!3m2!1sen!2sin!4v1764155079910!5m2!1sen!2sin"
+        style="width: 100%; border:0;"
+        height="400"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+
+    <!-- QUICK CONTACT BUTTONS -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Quick Contact Options</h2>
+                <p class="section-subtitle">Choose your preferred way to reach us</p>
+            </div>
+
+            <div class="row justify-content-center">
+                 @for (todo of contactCards; track $index){
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2 mb-sm-4">
+                            <a [href]="todo.link" target="_blank" class="card hover-lift text-center"
+                            style="text-decoration: none; color: inherit;" data-aos="zoom-in" [attr.data-aos-delay]="todo.delay" [attr.target]="todo.target">
+                            <div
+                             [style.background]="todo.bgColor"
+                                style="width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--spacing-md);">
+                                <i [class]="todo.icon" style="font-size: 24px; color: white;"></i>
+                            </div>
+                            <h4>{{ todo.title }}</h4>
+                            <p style="color: var(--gray-text); margin: 0;">{{ todo.subtitle }}</p>
+                        </a>
+                    </div>
+                 }
+
+            </div>
+
+         
+        </div>
+    </section>

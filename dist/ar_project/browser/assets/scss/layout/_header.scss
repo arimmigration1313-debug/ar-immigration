@@ -1,0 +1,116 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--white);
+  box-shadow: var(--shadow-md);
+  z-index: 1000;
+  transition: all var(--transition-base);
+
+  .navbar-menu {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+
+    a {
+      font-weight: var(--font-weight-medium);
+      color: var(--dark-text);
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: var(--secondary-color);
+        transition: var(--transition-base);
+      }
+
+      &:hover::after,
+      &.active::after {
+        width: 100%;
+      }
+    }
+  }
+
+  .navbar-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    background: none;
+    border: none;
+
+    span {
+      width: 25px;
+      height: 3px;
+      background: var(--dark-text);
+      border-radius: var(--radius-full);
+      transition: var(--transition-base);
+    }
+  }
+
+  /* ===== Responsive (LG Down) ===== */
+  @include media-breakpoint-down(lg) {
+
+    .navbar-menu {
+      position: fixed;
+      top: 70px;
+      left: -100%;
+      width: 80%;
+      max-width: 300px;
+      height: calc(100vh - 70px);
+      background: var(--white);
+      flex-direction: column;
+      align-items: flex-start;
+      padding: var(--spacing-lg);
+      box-shadow: var(--shadow-xl);
+      transition: var(--transition-base);
+      gap: var(--spacing-md);
+    }
+
+    .navbar-menu.active {
+      left: 0;
+    }
+
+    .navbar-toggle {
+      display: flex;
+    }
+  }
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--light-bg);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-base);
+  margin-left: var(--spacing-md);
+
+  &:hover {
+    background: var(--gray-light);
+    transform: rotate(20deg);
+  }
+
+  i {
+    font-size: 18px;
+    color: var(--dark-text);
+    transition: var(--transition-base);
+  }
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  .theme-toggle {
+    background: var(--gray-light);
+  }
+}
