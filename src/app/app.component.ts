@@ -11,7 +11,7 @@ import { SliderInitService } from './core/service/slider-init.service';
 })
 export class AppComponent implements OnInit {
 constructor(private sliderInit: SliderInitService) {}
-  title = 'ar_immigrration';
+  title = 'immigration-website';
    ngOnInit() {
       AOS.init({
         duration: 800,
